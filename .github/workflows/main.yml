@@ -26,7 +26,6 @@ jobs:
       - name: Generate documentation
         run: | 
           sudo apt-get install graphviz doxygen 
-          doxygen -g 
           doxygen       
           ls -la 
           tar -czvf html.tar.gz html/
