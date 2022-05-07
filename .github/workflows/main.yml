@@ -8,7 +8,7 @@ on:
 
 jobs: 
   build: 
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
 
     steps: 
       - uses: actions/checkout@v2
@@ -27,5 +27,5 @@ jobs:
         run: cd build && cmake .. 
       - name: build project
         run: cd build && make
-
-      
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v1.6
