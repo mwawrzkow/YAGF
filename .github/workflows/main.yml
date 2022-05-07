@@ -21,11 +21,11 @@ jobs:
         run: tree . 
       - name: update submodules 
         run: git submodule sync && git submodule update --init
-      - name: build Framework 
-        run: | 
-        mkdir build \
-        cd build \
-        cmake .. \
-        make 
+      - name: Create 'build' directory
+        run: mkdir build
+      -name: run cmake configuration
+        run: cd build && cmake .. 
+      -name: build project
+        run: cd build && make
 
       
