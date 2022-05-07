@@ -15,3 +15,7 @@ jobs:
 
       - name: Test github actions 
         run: echo "Hello World!"
+      - name: Testing out main directory
+        run: pwd
+      - name: Listing all directories
+        run: tree . 
