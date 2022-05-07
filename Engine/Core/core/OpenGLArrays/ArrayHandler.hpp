@@ -41,20 +41,20 @@ namespace GPU
         /**
          * @brief  Check if any buffers are avaliable
          * @note   
-         * @retval True - False
+         * @retval bool are any buffers free
          */
         bool areFreeBuffers();
         /**
          * @brief  Alocates GPU space for x buffers
          * @param int size amount of buffers
          * @note   
-         * @retval Returns if buffers were created
+         * @retval bool if buffers were created
          */
         bool alocateBuffer(int);
         /**
         * @brief  Returns pointer to first Available Buffer
         * @note   
-        * @retval Pointer to buffer, in not buffers available return nullptr
+        * @retval GPU_Ref Pointer to buffer, in not buffers available return nullptr
         */
         GPU_Ref *getFirstAvailavleBuffer();
         /**
