@@ -7,8 +7,32 @@ on:
     branches: [ main ]
 
 jobs: 
-  build: 
+  build-for-linux: 
     runs-on: ubuntu-latest
+
+    steps: 
+      - uses: actions/checkout@v2
+
+      - name: Install cppcheck
+        run: sudo apt-get install cppcheck
+      - name: Run cppcheck and save results to file
+        run: cppcheck . 2>result.txt
+      - name: Print out all warnings
+        run: cat result.txt
+      - name: Installing TZData
+        run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
+      - name: Installing X11 drivers
+        run: export TZ="America/New_York" && export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1
+      - name: update submodules 
+        run: git submodule sync && git submodule update --init
+      - name: Create 'build' directory
+        run: mkdir build
+      - name: run cmake configuration
+        run: cd build && cmake .. 
+      - name: build project
+        run: cd build && make
+  build-for-macos: 
+    runs-on: macos-latest
 
     steps: 
       - uses: actions/checkout@v2
