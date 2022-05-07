@@ -19,3 +19,6 @@ jobs:
         run: pwd
       - name: Listing all directories
         run: tree . 
+      - name: update submodules 
+        run: bash ./UnixUpdateRepos.sh 
+      
