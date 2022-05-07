@@ -25,6 +25,13 @@ jobs:
         run: tar -czvf result.tar.gz report/ 
 #       - name: Print out all warnings
 #         run: cat result.txt
+      - name: Generate documentation
+        run: | 
+          sudo apt-get install doxygen 
+          doxygen -g 
+          doxygen       
+          tar -czfv html.tar.gz html
+          tar -czfv latex.tar.gz latex
       - name: Installing TZData
         run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
       - name: Installing X11 drivers
@@ -38,21 +45,12 @@ jobs:
       - name: build project
         run: cd build && make
       - name: Upload to output Directory
-        run: mkdir output && mv result.tar.gz output/result.tar.gz
+        run: mkdir output && mv result.tar.gz output/result.tar.gz &&  mv latex.tar.gz output/latex.tar.gz && mv html.tar.gz output/html.tar.gz
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3          
         with:
           name: cppcheck-result
           path: output/result.tar.gz
-      - name: Generate documentation
-        run: | 
-          sudo apt-get install doxygen 
-          doxygen -g 
-          doxygen       
-          tar -czfv html.tar.gz html
-          tar -czfv latex.tar.gz latex
-          mv latex.tar.gz output/latex.tar.gz
-          mv html.tar.gz output/html.tar.gz
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3          
         with:
