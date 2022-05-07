@@ -13,8 +13,6 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
 
-      # - name: Installing SUDO
-      #   run: apt-get update && apt-get install -y sudo
       - name: Install cppcheck
         run: sudo apt-get install cppcheck
       - name: Run cppcheck and save results to file
@@ -33,5 +31,3 @@ jobs:
         run: cd build && cmake .. 
       - name: build project
         run: cd build && make
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v1.6
