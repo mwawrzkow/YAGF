@@ -18,7 +18,7 @@ jobs:
       - name: Installing TZData
         run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
       - name: Installing X11 drivers
-        run: sudo export TZ="America/New_York" && sudo export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1
+        run: export TZ="America/New_York" && export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1
       - name: update submodules 
         run: git submodule sync && git submodule update --init
       - name: Create 'build' directory
