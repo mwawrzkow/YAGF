@@ -23,16 +23,14 @@ jobs:
         run: cppcheck-htmlreport --file=result.xml --report-dir=report
       - name: compress report
         run: tar -czvf result.tar.gz report/ 
-#       - name: Print out all warnings
-#         run: cat result.txt
       - name: Generate documentation
         run: | 
           sudo apt-get install graphviz doxygen 
           doxygen -g 
           doxygen       
           ls -la 
-          tar -czfv html.tar.gz html/
-          tar -czfv latex.tar.gz latex/
+          tar -czvf html.tar.gz html/
+          tar -czvf latex.tar.gz latex/
       - name: Installing TZData
         run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
       - name: Installing X11 drivers
