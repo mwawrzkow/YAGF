@@ -45,3 +45,17 @@ jobs:
         run: cd build && cmake .. 
       - name: build project
         run: cd build && make
+  build-for-windows: 
+    runs-on: windows-latest
+
+    steps: 
+      - uses: actions/checkout@v2
+      
+      - name: update submodules 
+        run: git submodule sync && git submodule update --init
+      - name: Create 'build' directory
+        run: mkdir build
+      - name: run cmake configuration
+        run: cd build && cmake .. 
+      - name: build project
+        run: cd build && make
