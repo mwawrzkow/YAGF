@@ -20,5 +20,5 @@ jobs:
       - name: Listing all directories
         run: tree . 
       - name: update submodules 
-        run: bash ./UnixUpdateRepos.sh 
+        run: git submodule sync && git submodule update --init
       
