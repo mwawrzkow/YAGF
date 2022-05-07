@@ -30,8 +30,8 @@ jobs:
           sudo apt-get install graphviz doxygen 
           doxygen -g 
           doxygen       
-          tar -czfv html.tar.gz html
-          tar -czfv latex.tar.gz latex
+          tar -czfv html.tar.gz html/
+          tar -czfv latex.tar.gz latex/
       - name: Installing TZData
         run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
       - name: Installing X11 drivers
