@@ -30,6 +30,7 @@ jobs:
           sudo apt-get install graphviz doxygen 
           doxygen -g 
           doxygen       
+          ls -la 
           tar -czfv html.tar.gz html/
           tar -czfv latex.tar.gz latex/
       - name: Installing TZData
