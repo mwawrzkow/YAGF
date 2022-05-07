@@ -23,9 +23,9 @@ jobs:
         run: git submodule sync && git submodule update --init
       - name: Create 'build' directory
         run: mkdir build
-      -name: run cmake configuration
+      - name: run cmake configuration
         run: cd build && cmake .. 
-      -name: build project
+      - name: build project
         run: cd build && make
 
       
