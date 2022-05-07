@@ -56,6 +56,6 @@ jobs:
       - name: Create 'build' directory
         run: mkdir build
       - name: run cmake configuration
-        run: cd build && cmake .. 
+        run: cd build && cmake .. -G "MinGW Makefiles"  
       - name: build project
         run: cd build && make
