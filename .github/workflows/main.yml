@@ -15,6 +15,12 @@ jobs:
 
       # - name: Installing SUDO
       #   run: apt-get update && apt-get install -y sudo
+      - name: Install cppcheck
+        run: sudo apt-get install cppcheck
+      - name: Run cppcheck and save results to file
+        run: cppcheck . 2>result.txt
+      - name: Print out all warnings
+        run: cat result.txt
       - name: Installing TZData
         run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
       - name: Installing X11 drivers
