@@ -21,8 +21,8 @@ jobs:
         run: mkdir report
       - name: generate report
         run: cppcheck-htmlreport --file=result.xml --report-dir=report
-#       - name: compress report
-#         run: tar -czvf result.tar.gz report/ 
+      - name: compress report
+        run: tar -czvf result.tar.gz report/ 
 #       - name: Print out all warnings
 #         run: cat result.txt
       - name: Installing TZData
@@ -37,11 +37,8 @@ jobs:
         run: cd build && cmake .. 
       - name: build project
         run: cd build && make
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v3.0.0
-        with:
-          name: Static_audit
-          path: report/
+      - name: Upload to output Directory
+        run: mkdir output && mv result.tar.gz output/result.tar.gz
           
   build-for-macos: 
     runs-on: macos-latest
