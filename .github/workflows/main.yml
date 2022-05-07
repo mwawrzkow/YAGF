@@ -23,9 +23,9 @@ jobs:
         run: git submodule sync && git submodule update --init
       - name: build Framework 
         run: | 
-        mkdir build 
-        cd build 
-        cmake .. 
+        mkdir build \
+        cd build \
+        cmake .. \
         make 
 
       
