@@ -46,14 +46,7 @@ jobs:
           path: output/result.tar.gz
       - name: Generate documentation
         run: | 
-          git clone https://github.com/doxygen/doxygen.git
-          cd doxygen
-          mkdir build
-          cd build
-          cmake -G "Unix Makefiles" ..
-          make
-          sudo make install 
-          cd ../..
+          sudo apt-get install doxygen 
           doxygen -g 
           doxygen       
           tar -czfv html.tar.gz html
