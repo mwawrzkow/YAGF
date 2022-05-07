@@ -32,7 +32,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "My Project"
+PROJECT_NAME           = "Fast OpenGL Library"
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -68,7 +68,7 @@ OUTPUT_DIRECTORY       =
 # performance problems for the file system.
 # The default value is: NO.
 
-CREATE_SUBDIRS         = NO
+CREATE_SUBDIRS         = YES
 
 # If the ALLOW_UNICODE_NAMES tag is set to YES, doxygen will allow non-ASCII
 # characters to appear in the names of generated files. If set to NO, non-ASCII
@@ -217,7 +217,7 @@ QT_AUTOBRIEF           = NO
 # not recognized any more.
 # The default value is: NO.
 
-MULTILINE_CPP_IS_BRIEF = NO
+MULTILINE_CPP_IS_BRIEF = YES
 
 # By default Python docstrings are displayed as preformatted text and doxygen's
 # special commands cannot be used. By setting PYTHON_DOCSTRING to NO the
@@ -1352,7 +1352,7 @@ HTML_INDEX_NUM_ENTRIES = 100
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-GENERATE_DOCSET        = NO
+GENERATE_DOCSET        = YES
 
 # This tag determines the name of the docset feed. A documentation feed provides
 # an umbrella under which multiple documentation sets from a single provider
@@ -1389,7 +1389,7 @@ DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
 # The default value is: Publisher.
 # This tag requires that the tag GENERATE_DOCSET is set to YES.
 
-DOCSET_PUBLISHER_NAME  = Publisher
+DOCSET_PUBLISHER_NAME  = Marcin Wawrzków
 
 # If the GENERATE_HTMLHELP tag is set to YES then doxygen generates three
 # additional HTML index files: index.hhp, index.hhc, and index.hhk. The
