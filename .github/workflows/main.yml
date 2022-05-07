@@ -1,4 +1,4 @@
-name: Test build
+name: Veryfi build, and perform static code analysis
 
 on: 
   push: 
