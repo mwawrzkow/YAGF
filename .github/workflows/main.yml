@@ -39,6 +39,11 @@ jobs:
         run: cd build && make
       - name: Upload to output Directory
         run: mkdir output && mv result.tar.gz output/result.tar.gz
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: cppcheck-result
+          path: output/result.tar.gz
           
   build-for-macos: 
     runs-on: macos-latest
