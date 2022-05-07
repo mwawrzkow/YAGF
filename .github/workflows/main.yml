@@ -16,7 +16,13 @@ jobs:
       - name: Install cppcheck
         run: sudo apt-get install cppcheck
       - name: Run cppcheck and save results to file
-        run: cppcheck . 2>result.txt
+        run: cppcheck . --xml 2>result.xml
+      - name: Generate report folder
+        run: mkdir report
+      - name: generate report
+        run: cppcheck-htmlreport --file=result.xml --report-dir=report
+#       - name: compress report
+#         run: tar -czvf result.tar.gz report/ 
       - name: Print out all warnings
         run: cat result.txt
       - name: Installing TZData
@@ -31,6 +37,12 @@ jobs:
         run: cd build && cmake .. 
       - name: build project
         run: cd build && make
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.0.0
+        with:
+          name: Static_audit
+          path: report/
+          
   build-for-macos: 
     runs-on: macos-latest
 
