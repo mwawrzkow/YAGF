@@ -40,10 +40,36 @@ jobs:
       - name: Upload to output Directory
         run: mkdir output && mv result.tar.gz output/result.tar.gz
       - name: Archive code coverage results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3          
         with:
           name: cppcheck-result
           path: output/result.tar.gz
+      - name: Generate documentation
+        run: | 
+          git clone https://github.com/doxygen/doxygen.git
+          cd doxygen
+          mkdir build
+          cd build
+          cmake -G "Unix Makefiles" ..
+          make
+          sudo make install 
+          cd ../..
+          doxygen -g 
+          doxygen       
+          tar -czfv html.tar.gz html
+          tar -czfv latex.tar.gz latex
+          mv latex.tar.gz output/latex.tar.gz
+          mv html.tar.gz output/html.tar.gz
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3          
+        with:
+          name: doc_html
+          path: output/html.tar.gz
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3          
+        with:
+          name: doc_latex
+          path: output/latex.tar.gz
           
   build-for-macos: 
     runs-on: macos-latest
