@@ -23,8 +23,8 @@ jobs:
         run: cppcheck-htmlreport --file=result.xml --report-dir=report
 #       - name: compress report
 #         run: tar -czvf result.tar.gz report/ 
-      - name: Print out all warnings
-        run: cat result.txt
+#       - name: Print out all warnings
+#         run: cat result.txt
       - name: Installing TZData
         run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
       - name: Installing X11 drivers
