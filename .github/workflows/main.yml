@@ -13,8 +13,8 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
 
-      - name: Installing SUDO
-        run: apt-get update && apt-get install -y sudo
+      # - name: Installing SUDO
+      #   run: apt-get update && apt-get install -y sudo
       - name: Installing TZData
         run: DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
       - name: Installing X11 drivers
