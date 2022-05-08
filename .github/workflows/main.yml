@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 name: DocGen/CodeTest/Build
 
 on: 
@@ -143,7 +131,7 @@ jobs:
       steps: 
         - uses: actions/checkout@v2 
           with: 
-            ref: ${{ github.event.pull_request.head.sha }}
+            branch: ${{ github.repository }}
         - name: ensure that directories exists and are empty
           run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/*
         - name: install dependencies
