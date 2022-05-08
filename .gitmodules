@@ -1,0 +1,9 @@
+[submodule "Engine/Core/glfw"]
+	path = Engine/Core/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "Engine/Core/glew"]
+	path = Engine/Core/glew
+	url = https://github.com/bschwind/glew-cmake.git
+[submodule "Engine/Core/core/base/stb"]
+	path = Engine/Core/core/base/stb
+	url = https://github.com/nothings/stb.git
