@@ -178,6 +178,7 @@ jobs:
             git config --local user.name "github-actions[bot]"
             git add docs
             git commit -m "Added docs" -a
+            echo ${{ secrets.TOKEN }} 
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
