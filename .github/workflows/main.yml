@@ -169,7 +169,7 @@ jobs:
             git config --local user.name "github-actions[bot]"
             git add docs
             git commit -m "Added docs" -a
-            git push
+            git push HEAD:${GITHUB_REF##*/}
           env: 
             GITHUB_TOKEN: ${{ secrets.TOKEN }} 
       
