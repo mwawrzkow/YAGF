@@ -57,10 +57,9 @@ jobs:
   build-for-linux: 
     runs-on: ubuntu-latest
     needs: check-commit-message
-
+    if: github.commit != 
     steps: 
       - uses: actions/checkout@v2
-
       - name: Install cppcheck
         run: sudo apt-get install cppcheck
       - name: Installing TZData
