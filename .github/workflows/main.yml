@@ -15,6 +15,10 @@ jobs:
 
       - name: Install cppcheck
         run: sudo apt-get install cppcheck
+      - name: Installing TZData
+        run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
+      - name: Installing X11 drivers
+        run: export TZ="America/New_York" && export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1 graphviz doxygen
       - name: Run cppcheck and save results to file
         run: cppcheck . --xml 2>result.xml
       - name: Generate report folder
@@ -24,16 +28,11 @@ jobs:
       - name: compress report
         run: tar -czvf result.tar.gz report/ 
       - name: Generate documentation
-        run: | 
-          sudo apt-get install graphviz doxygen 
+        run: |  
           doxygen       
           ls -la 
           tar -czvf html.tar.gz html/
           tar -czvf latex.tar.gz latex/
-      - name: Installing TZData
-        run: DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
-      - name: Installing X11 drivers
-        run: export TZ="America/New_York" && export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1
       - name: update submodules 
         run: git submodule sync && git submodule update --init
       - name: Create 'build' directory
@@ -95,33 +94,33 @@ jobs:
       steps: 
         - uses: actions/checkout@v2 
         - name: ensure that directories exists and are empty
-          run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/*
+          run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/* && sudo apt-get install doxygen-latex 
         - name: Download HTML docs
           uses: aochmann/actions-download-artifact@1.0.4
           with:
             name: doc_html
             latest: true
             path: docs/html/
-        - name: unzip HTML docs 
-          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz
         - name: Download Latex docs
           uses: aochmann/actions-download-artifact@1.0.4
           with:
             name: doc_latex
             latest: true
             path: docs/latex/
-        - name: unzip Latex docs 
-          run: cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz
-        - name: build PDF file
-          run: sudo apt-get install doxygen-latex && cd docs/latex/latex/ && make 
-        - name: move pdf file to latex directory and remove sources
-          run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: Download audit docs
           uses: aochmann/actions-download-artifact@1.0.4
           with:
-            name: result
+            name: cppcheck-result
             latest: true
             path: docs/audit
+        - name: unzip HTML docs 
+          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz
+        - name: unzip Latex docs 
+          run: cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz
+        - name: build PDF file
+          run: cd docs/latex/latex/ && make 
+        - name: move pdf file to latex directory and remove sources
+          run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: unzip audit 
           run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz
         - name: list all files in docs
