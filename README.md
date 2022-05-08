@@ -1,5 +1,5 @@
-# [![Basic](https://github.com/mwawrzkow/FastOGLib/actions/workflows/main.yml/badge.svg)](https://github.com/mwawrzkow/FastOGLib/actions/workflows/main.yml) WIP: FastOGLib - Fast OpenGL Library
-
+# WIP: FastOGLib - Fast OpenGL Library
+[![Basic](https://github.com/mwawrzkow/FastOGLib/actions/workflows/main.yml/badge.svg)](https://github.com/mwawrzkow/FastOGLib/actions/workflows/main.yml)
 Fast and scalable library, able to create OpenGL progams on osx/linux/windows machines. 
 
 # Instalation of Library
