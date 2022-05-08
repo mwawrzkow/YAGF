@@ -113,7 +113,7 @@ jobs:
         - name: unzip Latex docs 
           run: cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz
         - name: build PDF file
-          run: cd docs/latex/latex/ && make 
+          run: sudo apt install pdflatex && cd docs/latex/latex/ && make 
         - name: move pdf file to latex directory and remove sources
           run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: Download audit docs
