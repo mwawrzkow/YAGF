@@ -123,13 +123,15 @@ jobs:
           run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: unzip audit 
           run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* . && rm -rf report/
-        - uses: stefanzweifel/git-auto-commit-action@v4
+        - name: Commit files
+          run: |
+            git config --local user.email "marcin.wawrzkow@outlook.com"
+            git config --local user.name "github-actions[bot]"
+            git add docs
+            git commit -m "Added docs" -a
+        - name: Push changes
+          uses: ad-m/github-push-action@master
           with:
-            commit_message: Automated docs with audit 
-            commit_options: '--no-verify --signoff'
-            file_pattern: docs/*
-            repository: .
-            commit_user_name: Docs Creation
-            commit_user_email: marcin.wawrzkow@outlook.com
-            commit_author: mwawrzkow <marcin.wawrzkow@outlook.com>   
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.ref }}  
       
