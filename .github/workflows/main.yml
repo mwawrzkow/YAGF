@@ -88,3 +88,25 @@ jobs:
         run: cd build && cmake .. -G "MinGW Makefiles"  
       - name: build project
         run: cd build && make
+  update-docs-on-branch: 
+      runs-on: ubuntu-latest
+      needs: [build-for-windows, build-for-macos, build-for-linux]
+      
+      steps: 
+        - uses: actions/checkout@v2 
+        - name: ensure that directories exists and are empty
+          run: mkdir -p docs/html docs/latex docs/checks && rm -rf docs/html/* docs/latex/* docs/checks/*
+        - name: Download HTML docs
+          uses: aochmann/actions-download-artifact@1.0.4
+          with:
+            name: doc_html
+            latest: true
+            path: docs/html/
+        - name: show HTML docs tree 
+          run: ls -LR docs/
+      
+      
+      
+      
+      
+      
