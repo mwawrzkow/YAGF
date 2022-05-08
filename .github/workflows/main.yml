@@ -131,7 +131,7 @@ jobs:
       steps: 
         - uses: actions/checkout@v2 
           with: 
-            ref: refs/heads/${{ github.head_ref }}
+            ref: ${{ github.sha }}
         - name: ensure that directories exists and are empty
           run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/*
         - name: install dependencies
@@ -172,7 +172,6 @@ jobs:
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
-            github_token: ${{ secrets.TOKEN }}
-            branch: ${{ github.branch }}  
+            github_token: ${{ secrets.TOKEN }} 
             force: true # this might be needed as well
       
