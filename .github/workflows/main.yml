@@ -130,8 +130,6 @@ jobs:
       if: ${{ !contains(github.event.head_commit.message, 'Added docs') }}
       steps: 
         - uses: actions/checkout@v2 
-          with: 
-            ref: ${{ github.sha }}
         - name: ensure that directories exists and are empty
           run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/* && ls -la
         - name: install dependencies
