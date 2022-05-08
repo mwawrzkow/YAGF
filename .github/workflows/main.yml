@@ -1,4 +1,4 @@
-name: Veryfi build, and perform static code analysis
+name: DocGen/CodeTest/Build
 
 on: 
   push: 
