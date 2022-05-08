@@ -122,7 +122,7 @@ jobs:
         - name: move pdf file to latex directory and remove sources
           run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: unzip audit 
-          run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv docs/audit/report/* docs/audit/ && rm -rf docs/audit/report/
+          run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* docs/audit/ && rm -rf report/
         - name: list all files in docs
           run: ls -LR docs/
 
