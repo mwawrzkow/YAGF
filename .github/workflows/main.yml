@@ -131,7 +131,7 @@ jobs:
       steps: 
         - uses: actions/checkout@v2 
           with: 
-            branch: ${{ github.repository }}
+            ref: refs/heads/${{ github.head_ref }}
         - name: ensure that directories exists and are empty
           run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/*
         - name: install dependencies
