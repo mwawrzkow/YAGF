@@ -116,17 +116,20 @@ jobs:
             latest: true
             path: docs/audit
         - name: unzip artifacts 
-          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz && cd ../.. && cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz && cd ../.. &&cd docs/latex/latex/ && make
+          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz && cd ../.. && cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz && cd ../..
+        - name: build pdf
+          run: cd docs/latex/latex/ && make
         - name: move pdf file to latex directory and remove sources
           run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: unzip audit 
           run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* . && rm -rf report/
-        - name: list all files in docs
-          run: ls -LR docs/
-
-      
-      
-      
-      
-      
+        - uses: stefanzweifel/git-auto-commit-action@v4
+          with:
+            commit_message: Automated docs with audit 
+            commit_options: '--no-verify --signoff'
+            file_pattern: docs/*
+            repository: .
+            commit_user_name: Docs Creation
+            commit_user_email: marcin.wawrzkow@outlook.com
+            commit_author: mwawrzkow <marcin.wawrzkow@outlook.com>   
       
