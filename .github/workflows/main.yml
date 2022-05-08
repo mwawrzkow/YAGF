@@ -94,7 +94,9 @@ jobs:
       steps: 
         - uses: actions/checkout@v2 
         - name: ensure that directories exists and are empty
-          run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/* && sudo apt-get install doxygen-latex 
+          run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/*
+        - name: install dependencies
+          run: sudo apt-get install doxygen-latex 
         - name: Download HTML docs
           uses: aochmann/actions-download-artifact@1.0.4
           with:
@@ -113,16 +115,12 @@ jobs:
             name: cppcheck-result
             latest: true
             path: docs/audit
-        - name: unzip HTML docs 
-          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz
-        - name: unzip Latex docs 
-          run: cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz
-        - name: build PDF file
-          run: cd docs/latex/latex/ && make 
+        - name: unzip artifacts 
+          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz && cd ../.. && cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz && cd ../.. &&cd docs/latex/latex/ && make
         - name: move pdf file to latex directory and remove sources
           run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: unzip audit 
-          run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* docs/audit/ && rm -rf report/
+          run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* . && rm -rf report/
         - name: list all files in docs
           run: ls -LR docs/
 
