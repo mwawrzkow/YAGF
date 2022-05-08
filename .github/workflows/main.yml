@@ -133,7 +133,7 @@ jobs:
           with: 
             ref: ${{ github.sha }}
         - name: ensure that directories exists and are empty
-          run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/*
+          run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/* && ls -la
         - name: install dependencies
           run: sudo apt-get install doxygen-latex 
         - name: Download HTML docs
@@ -164,14 +164,12 @@ jobs:
           run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* . && rm -rf report/
         - name: Commit files
           run: |
+            git status
             git config --local user.email "marcin.wawrzkow@outlook.com"
             git config --local user.name "github-actions[bot]"
             git add docs
             git commit -m "Added docs" -a
-            echo ${{ secrets.TOKEN }} 
-        - name: Push changes
-          uses: ad-m/github-push-action@master
-          with:
-            github_token: ${{ secrets.TOKEN }} 
-            force: true # this might be needed as well
+            git push
+          env: 
+            GITHUB_TOKEN: ${{ secrets.TOKEN }} 
       
