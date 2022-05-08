@@ -169,9 +169,9 @@ jobs:
         - name: Commit files
           run: |
             BRANCH=$(git ls-remote | grep ${{ github.sha }})
-            exit -1
             git status
             echo $BRANCH
+            exit -1
             git config --local user.email "marcin.wawrzkow@outlook.com"
             git config --local user.name "github-actions[bot]"
             git add docs
