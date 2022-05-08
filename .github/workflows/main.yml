@@ -39,7 +39,7 @@ jobs:
         with:
           commits: ${{ steps.get-pr-commits.outputs.commits }}
           pattern: '\s*Fixes\s*:?\s*(#\d+|github\.com\/kata-containers\/[a-z-.]*#\d+)'
-          warn: 'No "Fixes" found'
+          error: 'No "Fixes" found'
           one_pass_all_pass: 'true'
           
   build-for-linux: 
