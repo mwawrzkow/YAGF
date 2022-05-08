@@ -95,15 +95,38 @@ jobs:
       steps: 
         - uses: actions/checkout@v2 
         - name: ensure that directories exists and are empty
-          run: mkdir -p docs/html docs/latex docs/checks && rm -rf docs/html/* docs/latex/* docs/checks/*
+          run: mkdir -p docs/html docs/latex/src docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/*
         - name: Download HTML docs
           uses: aochmann/actions-download-artifact@1.0.4
           with:
             name: doc_html
             latest: true
             path: docs/html/
-        - name: show HTML docs tree 
+        - name: unzip HTML docs 
+          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz
+        - name: Download Latex docs
+          uses: aochmann/actions-download-artifact@1.0.4
+          with:
+            name: doc_latex
+            latest: true
+            path: docs/latex/src
+        - name: unzip Latex docs 
+          run: cd docs/latex/src && tar -xvzf doc_latex.tar.gz && rm doc_latex.tar.gz
+        - name: build PDF file
+          run: cd docs/latex/src/ && make 
+        - name: move pdf file to latex directory and remove sources
+          run: mv docs/latex/src/refman.pdf docs/latex/ && rm -rf docs/latex/src
+        - name: Download audit docs
+          uses: aochmann/actions-download-artifact@1.0.4
+          with:
+            name: result
+            latest: true
+            path: docs/audit
+        - name: unzip audit 
+          run: cd docs/audit/ && tar -xvzf result.tar.gz && rm result.tar.gz
+        - name: list all files in docs
           run: ls -LR docs/
+
       
       
       
