@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 name: DocGen/CodeTest/Build
 
 on: 
@@ -6,9 +18,52 @@ on:
   pull_request: 
     branches: [ main ]
 
-jobs: 
+jobs:
+
+  check-commit-message:
+    name: Check Commit Message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get PR Commits
+        id: 'get-pr-commits'
+        uses: tim-actions/get-pr-commits@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check Subject Line Length
+        uses: tim-actions/commit-message-checker-with-regex@v0.3.1
+        with:
+          commits: ${{ steps.get-pr-commits.outputs.commits }}
+          pattern: '^.{0,75}(\n.*)*$'
+          error: 'Subject too long (max 75)'
+
+      - name: Check Body Line Length
+        if: ${{ success() || failure() }}
+        uses: tim-actions/commit-message-checker-with-regex@v0.3.1
+        with:
+          commits: ${{ steps.get-pr-commits.outputs.commits }}
+          pattern: '^.+(\n.{0,72})*$'
+          error: 'Body line too long (max 72)'
+
+      - name: Check Fixes
+        if: ${{ success() || failure() }}
+        uses: tim-actions/commit-message-checker-with-regex@v0.3.1
+        with:
+          commits: ${{ steps.get-pr-commits.outputs.commits }}
+          pattern: '\s*Fixes\s*:?\s*(#\d+|github\.com\/kata-containers\/[a-z-.]*#\d+)'
+          error: 'No "Fixes" found'
+          one_pass_all_pass: 'true'
+
+      - name: Check subsystem
+        if: ${{ success() || failure() }}
+        uses: tim-actions/commit-message-checker-with-regex@v0.3.1
+        with:
+          commits: ${{ steps.get-pr-commits.outputs.commits }}
+          pattern: '^[\h]*([^:\h\n]+)[\h]*:'
+          error: 'Failed to find subsystem in subject'
   build-for-linux: 
     runs-on: ubuntu-latest
+    needs: check-commit-message
 
     steps: 
       - uses: actions/checkout@v2
@@ -61,7 +116,7 @@ jobs:
           
   build-for-macos: 
     runs-on: macos-latest
-
+    needs: check-commit-message
     steps: 
       - uses: actions/checkout@v2
       
@@ -75,7 +130,7 @@ jobs:
         run: cd build && make
   build-for-windows: 
     runs-on: windows-latest
-
+    needs: check-commit-message
     steps: 
       - uses: actions/checkout@v2
       
@@ -132,6 +187,6 @@ jobs:
         - name: Push changes
           uses: ad-m/github-push-action@master
           with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
+            github_token: ${{ secrets.TOKEN }}
             branch: ${{ github.ref }}  
       
