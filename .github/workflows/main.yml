@@ -162,6 +162,10 @@ jobs:
           run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
         - name: unzip audit 
           run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* . && rm -rf report/
+        - name: Extract branch name
+          shell: bash
+          run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+          id: extract_branch
         - name: Commit files
           run: |
             git status
@@ -169,7 +173,8 @@ jobs:
             git config --local user.name "github-actions[bot]"
             git add docs
             git commit -m "Added docs" -a
-            git push HEAD:${GITHUB_REF##*/}
+            git push HEAD:
           env: 
             GITHUB_TOKEN: ${{ secrets.TOKEN }} 
+            BRANCH: git show-ref | grep ${{ github.sha }} | cut -d '/' -f 4 | tr -d " \t\n\r"
       
