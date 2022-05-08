@@ -130,6 +130,12 @@ jobs:
       if: ${{ !contains(github.event.head_commit.message, 'Added docs') }}
       steps: 
         - uses: actions/checkout@v2 
+        - name: installing gh 
+          run: sudo apt install gh
+        - name: Checkout PR
+          env:
+            GITHUB_TOKEN: ${{ secrets.TOKEN }} 
+          run: gh pr checkout ${{ github.event.pull_request.number }}
         - name: ensure that directories exists and are empty
           run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/* && ls -la
         - name: install dependencies
