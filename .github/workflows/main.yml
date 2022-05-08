@@ -169,11 +169,12 @@ jobs:
         - name: Commit files
           run: |
             git status
+            echo $BRANCH
             git config --local user.email "marcin.wawrzkow@outlook.com"
             git config --local user.name "github-actions[bot]"
             git add docs
             git commit -m "Added docs" -a
-            git push HEAD:
+            git push HEAD:$BRANCH
           env: 
             GITHUB_TOKEN: ${{ secrets.TOKEN }} 
             BRANCH: git show-ref | grep ${{ github.sha }} | cut -d '/' -f 4 | tr -d " \t\n\r"
