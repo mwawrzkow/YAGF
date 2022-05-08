@@ -177,5 +177,5 @@ jobs:
             git push HEAD:$BRANCH
           env: 
             GITHUB_TOKEN: ${{ secrets.TOKEN }} 
-            BRANCH: $(git show-ref | grep ${{ github.sha }} | cut -d '/' -f 4 | tr -d " \t\n\r")
+            BRANCH: ${{ git show-ref | grep ${{ github.sha }} | cut -d '/' -f 4 | tr -d " \t\n\r" }}
       
