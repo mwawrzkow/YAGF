@@ -123,7 +123,7 @@ jobs:
             latest: true
             path: docs/audit
         - name: unzip audit 
-          run: cd docs/audit/ && tar -xvzf result.tar.gz && rm result.tar.gz
+          run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz
         - name: list all files in docs
           run: ls -LR docs/
 
