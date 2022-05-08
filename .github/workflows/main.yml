@@ -168,7 +168,7 @@ jobs:
           id: extract_branch
         - name: Commit files
           run: |
-            BRANCH=$(git ls-remote | grep ${{ github.sha }})
+            BRANCH=$(git ls-remote)
             git status
             echo $BRANCH
             exit -1
