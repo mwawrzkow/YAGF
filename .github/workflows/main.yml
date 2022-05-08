@@ -172,17 +172,11 @@ jobs:
           id: extract_branch
         - name: Commit files
           run: |
-            BRANCH=$(git ls-remote | grep ${{ github.sha }})
-            git status
-            echo $(git ls-remote)
-            echo $BRANCH
-            echo ${{ github.sha }}
-            exit -1
-            # git config --local user.email "marcin.wawrzkow@outlook.com"
-            # git config --local user.name "github-actions[bot]"
-            # git add docs
-            # git commit -m "Added docs" -a
-            # git push HEAD:$BRANCH
+            git config --local user.email "marcin.wawrzkow@outlook.com"
+            git config --local user.name "github-actions[bot]"
+            git add docs
+            git commit -m "Added docs" -a
+            git push HEAD:$BRANCH
           env: 
             GITHUB_TOKEN: ${{ secrets.TOKEN }} 
       
