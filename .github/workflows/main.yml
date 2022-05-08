@@ -168,7 +168,8 @@ jobs:
           id: extract_branch
         - name: Commit files
           run: |
-            BRANCH=$(git ls-remote | grep ${{ github.sha }} | cut -d '/' -f 3 | head -n 1)
+            BRANCH=$(git ls-remote | grep ${{ github.sha }})
+            exit -1
             git status
             echo $BRANCH
             git config --local user.email "marcin.wawrzkow@outlook.com"
