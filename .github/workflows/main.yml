@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   pull_request: 
     branches: [ main ]
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.txt'
 
 jobs:
   check-commit-message:
@@ -121,6 +124,34 @@ jobs:
         run: cd build && cmake .. -G "MinGW Makefiles"  
       - name: build project
         run: cd build && make
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    needs: build-for-linux
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'cpp' ]
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
+    - run: |
+        echo "Run, Build Application using script"
+        DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
+        export TZ="America/New_York" && export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1 graphviz
+        git submodule sync && git submodule update --init
+        mkdir build && cd build && cmake .. && make 
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+    
   update-docs-on-branch: 
       runs-on: ubuntu-latest
       needs: [build-for-windows, build-for-macos, build-for-linux]
