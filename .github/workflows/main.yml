@@ -132,12 +132,14 @@ jobs:
         config-file: ./.github/codeql-config.yaml 
         queries: security-and-quality
         languages: ${{ matrix.language }}
-    # - run: |
-    #     echo "Run, Build Application using script"
-    #     DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
-    #     export TZ="America/New_York" && export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1 graphviz
-    #     git submodule sync && git submodule update --init
-    #     mkdir build && cd build && cmake .. && make 
+    - run: |
+        echo "Run, Build Application using script"
+        DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --no-install-recommends tzdata
+        export TZ="America/New_York" && export DEBIAN_FRONTEND="noninteractive" && sudo apt-get update && sudo apt install -y xorg-dev libglu1-mesa mesa-opencl-icd libgl1-mesa-dev xsltproc libglfw3-dev libglu1-mesa-dev xvfb libxinerama1 libxcursor1 graphviz
+        git submodule sync && git submodule update --init
+        mkdir build && cd build && cmake .. && make 
+    - run: | 
+        rm -rf Engine/Core/glew Engine/Core/glfw Engine/Core/core/base/stb
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
     
