@@ -78,6 +78,8 @@ jobs:
           ls -la 
           tar -czvf html.tar.gz html/
           tar -czvf latex.tar.gz latex/
+      - name: Update submodules
+        run:  git submodule sync && git submodule update --init
       - name: Create 'build' directory
         run: mkdir build
       - name: run cmake configuration
