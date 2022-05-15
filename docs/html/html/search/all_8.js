@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['releasebuffer_18',['releaseBuffer',['../df/da8/class_g_p_u_1_1_array_handler.html#ae59e3f581dbc8ede268e2a510244415a',1,'GPU::ArrayHandler']]]
+  ['primitive_20',['Primitive',['../d1/df5/class_primitive.html',1,'']]],
+  ['primitivesmanager_21',['PrimitivesManager',['../d2/d72/class_primitives_1_1_primitives_manager.html',1,'Primitives']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['primitive_16',['Primitive',['../d1/df5/class_primitive.html',1,'']]],
-  ['primitivesmanager_17',['PrimitivesManager',['../d2/d72/class_primitives_1_1_primitives_manager.html',1,'Primitives']]]
+  ['observer_19',['Observer',['../dd/d23/class_o_s_d_l_1_1_observer.html',1,'OSDL']]]
 ];
