@@ -23,7 +23,7 @@ namespace Primitives
         float getY();
         void setAlpha(float);
         bool isNear(float, float, float) override;
-        ~Square();
+        virtual ~Square();
     };
 
 }

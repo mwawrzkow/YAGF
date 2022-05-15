@@ -44,7 +44,7 @@ namespace Primitives
         setPosition(this->x + x, this->y + y);
     }
     Square::~Square()
-    {
+    { 
     }
     bool Square::isVisible()
     {

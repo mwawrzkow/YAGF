@@ -16,7 +16,7 @@ public:
     Primitive(prim_type);
     virtual bool isVisible() = 0;
     virtual bool isNear(float, float, float) = 0;
-    ~Primitive();
+    virtual ~Primitive();
 };
 
 #endif
