@@ -11,8 +11,9 @@ protected:
         TRIANGLE,
         SQUARE,
     } TYPE;
-
 public:
+    float sin(float r);
+    float cos(float r);
     Primitive(prim_type);
     virtual bool isVisible() = 0;
     virtual bool isNear(float, float, float) = 0;

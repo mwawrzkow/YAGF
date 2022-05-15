@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.7.2)
 add_compile_options(-Wall)
+add_executable(main main.cpp)
 
 if(WIN32)
         add_compile_definitions(GLEW_STATIC)
@@ -14,6 +15,7 @@ add_library(gl_Core
         # core/primitives/Light/DirectLight.cpp
         # core/primitives/Light/SphericalLight.cpp
         # core/primitives/Light/GlobalLight.cpp #TODO: add when starts working
+        # core/Line.cpp
         core/OpenGLArrays/ArrayHandler.cpp 
         core/base/Texture.cpp
         core/base/OpenGLStart.cpp
@@ -33,10 +35,9 @@ glew_static)
 set(engineLibs gl_Core)
 target_link_libraries(gl_Core ${GL_DEF})
 
-if(A_Engine_debug)
-        add_executable(main main.cpp)
-        target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glfw/include )
-        target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glew/include )
-        target_link_libraries(main gl_Core)
-endif()
+# if(A_Engine_debug)
+target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glfw/include )
+target_include_directories(main PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glew/include )
+target_link_libraries(main gl_Core)
+# endif()
 

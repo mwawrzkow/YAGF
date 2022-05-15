@@ -98,26 +98,16 @@ int main(int argc, char **argv)
     WindowProperties->setWindowHeight(height);
     WindowProperties->setWindowWidth(width);
     WindowProperties->getTextures()->alocateTextureSpace(100);
-//     std::vector<Primitives::Square> sqrtVect;
-//     for (int i = 0; i < 100; i++)
-//     {
-//         for (int j = 0; j < 100; j++)
-//         {
-//             //generate random alpha value
-//             float alpha = (float)rand() / (float)RAND_MAX;
-//             Primitives::Square tmp(50 * i, 50 * j, 100, alpha);
-//             if(i == 0 && j == 10 ){
-//                 tmp.setTexture("Sprite.png");
-//             }else 
-//             if (i % 2)
-//             {
-//                 tmp.setTexture("Square.png");
-//             }
-//             else
-//             {
-//                 tmp.setTexture("Square.png");
-//             }
-//             sqrtVect.push_back(tmp);
+    std::vector<Primitives::Square> sqrtVect;
+    for(int i = 0; i < 100 ; i++)
+    {
+        sqrtVect.push_back(Primitives::Square(width/2,height/2,1000,1.0f));
+        sqrtVect[i].setTexture("Square.png");
+        sqrtVect[i].setRotation(i * (360.0f / 100.0f));
+        // sqrtVect[i].setRotation(0);
+    }
+    // Primitives::Square tmp(100, 100, 100, 1.0f);
+
 
 // #ifdef __APPLE__
 //             CheckGLErrors();
@@ -133,6 +123,7 @@ int main(int argc, char **argv)
     float lastTime = 0;
     int renderedObjects = 0;
 #endif
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
     while (!glfwWindowShouldClose(window))
     {
 
@@ -143,6 +134,11 @@ int main(int argc, char **argv)
         glfwSetKeyCallback(window, onKeyCallback);
         WindowProperties->setWindowHeight(height);
         WindowProperties->setWindowWidth(width);
+        for (auto &i : sqrtVect)
+        {
+            i.Display();
+            // i.rotate(0.01f);
+        }
 #ifdef DEBUG
         double currentTime = glfwGetTime();
         nbFrames++;
