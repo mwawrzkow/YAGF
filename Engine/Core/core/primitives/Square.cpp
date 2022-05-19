@@ -4,38 +4,33 @@
 #include <iostream>
 namespace Primitives
 {
-    void Square::rotateVertices(std::vector<float> &vertices)
+    Square::verticies_ptr_array Square::rotateVertices()
     {
-        // calculate center of the square using x and y coordinates from vertices
-        float px = (vertices[0]+vertices[2])/2;
-        float py = (vertices[1]+vertices[5])/2;
-        
-        // given vertices which are set in pairs, calculate the new vertices using the rotation matrix
+        Square::verticies_ptr_array rotated_vertices = {};
+        for (int i = 0; i < 4; i++)
+            rotated_vertices[i] = std::make_unique<PointF>(PointF{verticies_ptr[i]->x, verticies_ptr[i]->y});
+        float px = (rotated_vertices[0]->x + rotated_vertices[1]->x) / 2;
+        float py = (rotated_vertices[0]->y + rotated_vertices[3]->y) / 2;
         for (int i = 0; i < 4; i++)
         {
-            float x1 = vertices[i*2];
-            float y1 = vertices[i*2+1];
-            vertices[i * 2] = px + (x1 -px)*cos(angle) - (y1 -py)*sin(angle);
-            vertices[(i * 2) + 1] = py + (x1 -px)*sin(angle) + (y1 -py)*cos(angle);
+            float x1 = rotated_vertices[i]->x;
+            float y1 = rotated_vertices[i]->y;
+            rotated_vertices[i]->x = px + (x1 - px) * cos(angle) - (y1 - py) * sin(angle);
+            rotated_vertices[i]->y = py + (x1 - px) * sin(angle) + (y1 - py) * cos(angle);
         }
+        return rotated_vertices;
     }
     void Square::calculateMatrixes()
     {
         const int &width = window->getWindowWidth();
         const int &height = window->getWindowHeight();
-        float ay = (size / float(height) / 2.f), ax = (size / float(width) / 2.f);
-        std::vector<float> vertices = {
-            2 * (((x) - float(width) / 2) / float(width)) - ax, 2 * ((y - float(height)) / float(height)) - ay + 1.0f,
-            2 * (((x) - float(width) / 2) / float(width)) + ax, 2 * ((y - float(height)) / float(height)) - ay + 1.0f,
-            2 * (((x) - float(width) / 2) / float(width)) + ax, 2 * ((y - float(height)) / float(height)) + ay + 1.0f,
-            2 * (((x) - float(width) / 2) / float(width)) - ax, 2 * ((y - float(height)) / float(height)) + ay + 1.0f};
-        rotateVertices(vertices);
+        auto vertices = rotateVertices();
         float vert[] = {
-            /*    cords                   |    RGBA color     |    TexturePos        */
-            vertices[0], vertices[1], 0.0f, 1.0f, 1.0f, 1.0f, alpha, 1.0f, 1.0f,
-            vertices[2], vertices[3], 0.0f, 1.0f, 1.0f, 1.0f, alpha, 0.0f, 1.0f,
-            vertices[4], vertices[5], 0.0f, 1.0f, 1.0f, 1.0f, alpha, 0.0f, 0.0f,
-            vertices[6], vertices[7], 0.0f, 1.0f, 1.0f, 1.0f, alpha, 1.0f, 0.0f};
+            /*    cords                   |    RGBA color | TexturePos */
+            vertices[0]->x / width, vertices[0]->y / height, 0.0f, color_ptr[0]->color.r, color_ptr[0]->color.g, color_ptr[0]->color.b, color_ptr[0]->alpha, 1.0f, 1.0f,
+            vertices[1]->x / width, vertices[1]->y / height, 0.0f, color_ptr[1]->color.r, color_ptr[1]->color.g, color_ptr[1]->color.b, color_ptr[1]->alpha, 0.0f, 1.0f,
+            vertices[2]->x / width, vertices[2]->y / height, 0.0f, color_ptr[2]->color.r, color_ptr[2]->color.g, color_ptr[2]->color.b, color_ptr[2]->alpha, 0.0f, 0.0f,
+            vertices[3]->x / width, vertices[3]->y / height, 0.0f, color_ptr[3]->color.r, color_ptr[3]->color.g, color_ptr[3]->color.b, color_ptr[3]->alpha, 1.0f, 0.0f};
         unsigned int inc[] = {
             0, 1, 2,
             0, 2, 3};
@@ -44,13 +39,41 @@ namespace Primitives
     Square::Square(float x, float y, float a, float alpha)
         : Primitive(Primitive::prim_type::SQUARE)
     {
+        for (int i = 0; i < 4; i++)
+            color_ptr[i] = std::make_unique<ColorRGBAF>(
+                ColorRGBAF{
+                    {1.0f,
+                     1.0f,
+                     1.0f},
+                    alpha});
         this->x = x;
         this->y = y;
         this->size = a;
-        this->alpha = alpha;
+        this->verticies_ptr[0] = std::make_unique<PointF>(PointF{x - a / 2.0f, y - a / 2.0f});
+        this->verticies_ptr[1] = std::make_unique<PointF>(PointF{x + a / 2.0f, y - a / 2.0f});
+        this->verticies_ptr[2] = std::make_unique<PointF>(PointF{x + a / 2.0f, y + a / 2.0f});
+        this->verticies_ptr[3] = std::make_unique<PointF>(PointF{x - a / 2.0f, y + a / 2.0f});
         window = &Global::WindowProperties::getInstance();
         calculateMatrixes();
-        std::cout << std::endl;
+    }
+    Square::Square(const Square &s)
+        : Primitive(Primitive::prim_type::SQUARE)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            this->verticies_ptr[i] = std::make_unique<PointF>(PointF{s.verticies_ptr[i]->x, s.verticies_ptr[i]->y});
+            this->color_ptr[i] = std::make_unique<ColorRGBAF>(
+                ColorRGBAF{
+                    {s.color_ptr[i]->color.r,
+                     s.color_ptr[i]->color.g,
+                     s.color_ptr[i]->color.b},
+                    s.color_ptr[i]->alpha});
+        }
+        this->x = s.x;
+        this->y = s.y;
+        this->size = s.size;
+        window = &Global::WindowProperties::getInstance();
+        calculateMatrixes();
     }
     void Square::setTexture(std::string data)
     {
@@ -67,8 +90,36 @@ namespace Primitives
     {
         setPosition(this->x + x, this->y + y);
     }
+    void Square::setR(float r)
+    {
+        for (auto &c : color_ptr)
+        {
+            c->color.r = r;
+        }
+
+        if (isVisible())
+            calculateMatrixes();
+    }
+    void Square::setG(float g)
+    {
+        for (auto &c : color_ptr)
+        {
+            c->color.g = g;
+        }
+        if (isVisible())
+            calculateMatrixes();
+    }
+    void Square::setB(float b)
+    {
+        for (auto &c : color_ptr)
+        {
+            c->color.b = b;
+        }
+        if (isVisible())
+            calculateMatrixes();
+    }
     Square::~Square()
-    { 
+    {
     }
     bool Square::isVisible()
     {
@@ -103,7 +154,10 @@ namespace Primitives
     }
     void Square::setAlpha(float alpha)
     {
-        this->alpha = alpha;
+        for (auto &c : color_ptr)
+        {
+            c->alpha = alpha;
+        }
         if (isVisible())
             calculateMatrixes();
     }
@@ -124,5 +178,36 @@ namespace Primitives
     void Square::rotate(float angle)
     {
         setRotation(this->angle + angle);
+    }
+    void Square::setColor(float r, float g, float b, float alpha)
+    {
+        for (auto &c : color_ptr)
+        {
+            c->color.r = r;
+            c->color.g = g;
+            c->color.b = b;
+            c->alpha = alpha;
+        }
+        if (isVisible())
+            calculateMatrixes();
+    }
+    Square &Square::operator=(const Square &s)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            this->verticies_ptr[i] = std::make_unique<PointF>(PointF{s.verticies_ptr[i]->x, s.verticies_ptr[i]->y});
+            this->color_ptr[i] = std::make_unique<ColorRGBAF>(
+                ColorRGBAF{
+                    {s.color_ptr[i]->color.r,
+                     s.color_ptr[i]->color.g,
+                     s.color_ptr[i]->color.b},
+                    s.color_ptr[i]->alpha});
+        }
+        this->x = s.x;
+        this->y = s.y;
+        this->size = s.size;
+        window = &Global::WindowProperties::getInstance();
+        calculateMatrixes();
+        return *this;
     }
 }

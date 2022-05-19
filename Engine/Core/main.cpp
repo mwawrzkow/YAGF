@@ -38,7 +38,7 @@ void onKeyPress(int key)
 }
 void onKeyCallback(GLFWwindow *window, int key, int status, int action, int mods)
 {
-    std::cout << key << std::endl;
+    std::cout << key <<  " "<< action  <<std::endl;
     switch (action)
     {
     case GLFW_PRESS:
@@ -99,15 +99,14 @@ int main(int argc, char **argv)
     WindowProperties->setWindowWidth(width);
     WindowProperties->getTextures()->alocateTextureSpace(100);
     std::vector<Primitives::Square> sqrtVect;
-    for(int i = 0; i < 100 ; i++)
+    for(int i = 0; i <  1; i++)
     {
-        sqrtVect.push_back(Primitives::Square(width/2,height/2,1000,1.0f));
+        sqrtVect.push_back(Primitives::Square(100,100,1000,1.0f));
         sqrtVect[i].setTexture("Square.png");
-        sqrtVect[i].setRotation(i * (360.0f / 100.0f));
+        sqrtVect[i].setRotation(i * (360.0f / 10.0f));
         // sqrtVect[i].setRotation(0);
     }
     // Primitives::Square tmp(100, 100, 100, 1.0f);
-
 
 // #ifdef __APPLE__
 //             CheckGLErrors();
@@ -123,7 +122,8 @@ int main(int argc, char **argv)
     float lastTime = 0;
     int renderedObjects = 0;
 #endif
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    // float color = 0.0f;
     while (!glfwWindowShouldClose(window))
     {
 
@@ -137,8 +137,15 @@ int main(int argc, char **argv)
         for (auto &i : sqrtVect)
         {
             i.Display();
-            // i.rotate(0.01f);
+            i.rotate(0.001f);
+            // i.setRotation(M_PI/4);
         }
+        // sqrtVect[0].setColor(color/2,0,color);
+        // color += 0.01f;
+        // if (color > 1.0f)
+        //     color = 0.0f;
+        // sqrtVect[0].setRotation(0);
+        // sqrtVect[1].setRotation(M_PI/4);
 #ifdef DEBUG
         double currentTime = glfwGetTime();
         nbFrames++;
