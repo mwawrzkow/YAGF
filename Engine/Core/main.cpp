@@ -8,12 +8,7 @@
 #include "core/WindowProperties.hpp"
 #include "core/primitives/Square.hpp"
 #include <vector>
-#ifdef __MINGW32__
-#define _USE_MATH_DEFINES
-#include <cmath>
-#else
 #include <math.h>
-#endif
 #include "core/base/OpenGLStart.hpp"
 #include <algorithm>
 #define STB_IMAGE_IMPLEMENTATION
