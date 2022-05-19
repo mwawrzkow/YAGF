@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['controller_6',['Controller',['../d8/d87/class_controller.html',1,'']]]
+  ['color_6',['Color',['../d1/d5f/struct_primitives_1_1_color.html',1,'Primitives']]],
+  ['colorrgba_7',['ColorRGBA',['../db/d6b/struct_primitives_1_1_color_r_g_b_a.html',1,'Primitives']]],
+  ['controller_8',['Controller',['../d8/d87/class_controller.html',1,'']]]
 ];

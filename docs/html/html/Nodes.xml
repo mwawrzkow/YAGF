@@ -1003,6 +1003,43 @@
             <Path></Path>
             <Subnodes>
              <Node>
+              <Name>Color</Name>
+              <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>b</Name>
+                <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
+                <Anchor>a946ac10debccbb55c5315b0182405b24</Anchor>
+               </Node>
+               <Node>
+                <Name>g</Name>
+                <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
+                <Anchor>a14fe21969a1df3b1949415aeab2d3db7</Anchor>
+               </Node>
+               <Node>
+                <Name>r</Name>
+                <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
+                <Anchor>a9c90618caa01fffb5a05318fa70509c4</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>ColorRGBA</Name>
+              <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>alpha</Name>
+                <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
+                <Anchor>a7129c76abf8a396a157d326214f27881</Anchor>
+               </Node>
+               <Node>
+                <Name>color</Name>
+                <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
+                <Anchor>a14ca826ce6041fc4ddfa57f9fc0be074</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
               <Name>Line</Name>
               <Path>d2/df4/class_primitives_1_1_line.html</Path>
               <Subnodes>
@@ -1020,6 +1057,22 @@
                 <Name>isVisible</Name>
                 <Path>d2/df4/class_primitives_1_1_line.html</Path>
                 <Anchor>a66dac47f04a9bd85cdfadf89408d1b4c</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>Point2D</Name>
+              <Path>dc/d51/struct_primitives_1_1_point2_d.html</Path>
+              <Subnodes>
+               <Node>
+                <Name>x</Name>
+                <Path>dc/d51/struct_primitives_1_1_point2_d.html</Path>
+                <Anchor>a3231cab211b45ed4c423e37fa93a4153</Anchor>
+               </Node>
+               <Node>
+                <Name>y</Name>
+                <Path>dc/d51/struct_primitives_1_1_point2_d.html</Path>
+                <Anchor>ad710c25d51c2ebe5c70b61f2cc17a2fa</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1084,9 +1137,24 @@
               <Path>de/ddd/class_primitives_1_1_square.html</Path>
               <Subnodes>
                <Node>
+                <Name>colors_ptr_array</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>abc123eb0681d7f4212923d870399255d</Anchor>
+               </Node>
+               <Node>
+                <Name>verticies_ptr_array</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a19b14c890885cb553868ad43a029c818</Anchor>
+               </Node>
+               <Node>
                 <Name>Square</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a14dca8bc11ee40a5380294ef32ea9ccc</Anchor>
+               </Node>
+               <Node>
+                <Name>Square</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a4d929392f502c3d4b8efaad3c6f5ac87</Anchor>
                </Node>
                <Node>
                 <Name>~Square</Name>
@@ -1134,6 +1202,11 @@
                 <Anchor>a93e5e9d6dfab457515ea2efa3ea5d6f4</Anchor>
                </Node>
                <Node>
+                <Name>operator=</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a6cd731ab147258b82194802c26734349</Anchor>
+               </Node>
+               <Node>
                 <Name>rotate</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a65daa33f3cc4db406cc35d55bd01ffa1</Anchor>
@@ -1141,7 +1214,7 @@
                <Node>
                 <Name>rotateVertices</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>ac7d1870270e68f16f14d9b3a3404ffed</Anchor>
+                <Anchor>a2698e8832e17dda2edf8e598a2be282f</Anchor>
                </Node>
                <Node>
                 <Name>setAlpha</Name>
@@ -1149,9 +1222,29 @@
                 <Anchor>a48e7991e2a5db9c16f49768a75c6ad5d</Anchor>
                </Node>
                <Node>
+                <Name>setB</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a5594b4ae7ce904635335d5737482a775</Anchor>
+               </Node>
+               <Node>
+                <Name>setColor</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a2772ca56d742bdbf12dfb5aa50837425</Anchor>
+               </Node>
+               <Node>
+                <Name>setG</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>af03afda4acb1458e591b8ffe8731888a</Anchor>
+               </Node>
+               <Node>
                 <Name>setPosition</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a610d88954d4dccd6a28413650e1518b4</Anchor>
+               </Node>
+               <Node>
+                <Name>setR</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a42e53f420e15b998d9faacff846e4e4e</Anchor>
                </Node>
                <Node>
                 <Name>setRotation</Name>
@@ -1164,34 +1257,24 @@
                 <Anchor>aa5987c3269ff1d0df07ccffcc6f1cbdf</Anchor>
                </Node>
                <Node>
-                <Name>alpha</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a2d874f61ebecc5331357cf1be1dbdd7c</Anchor>
-               </Node>
-               <Node>
                 <Name>angle</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a70b1a13abd57f769754e1020f4ca24e2</Anchor>
                </Node>
                <Node>
-                <Name>b</Name>
+                <Name>color_ptr</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>aad6ec977fd296dec3a4c86cdbc9e7e2d</Anchor>
-               </Node>
-               <Node>
-                <Name>g</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a3663954bba08185dccef317555362593</Anchor>
-               </Node>
-               <Node>
-                <Name>r</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>ac6e73f992ec09402be434a74ec32e8f1</Anchor>
+                <Anchor>af6f93a817b79e88f77150d5dc625c16b</Anchor>
                </Node>
                <Node>
                 <Name>size</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a4204b6201cd093d66b54178abb7ec2a4</Anchor>
+               </Node>
+               <Node>
+                <Name>verticies_ptr</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a8110c202897fefa819872cc1ce486d7d</Anchor>
                </Node>
                <Node>
                 <Name>window</Name>
@@ -1404,6 +1487,14 @@
             <Path>df/da8/class_g_p_u_1_1_array_handler.html</Path>
            </Node>
            <Node>
+            <Name>Primitives::Color&lt; T &gt;</Name>
+            <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
+           </Node>
+           <Node>
+            <Name>Primitives::ColorRGBA&lt; T &gt;</Name>
+            <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
+           </Node>
+           <Node>
             <Name>Lights::DirectLight</Name>
             <Path>d7/d5b/class_lights_1_1_direct_light.html</Path>
            </Node>
@@ -1446,6 +1537,10 @@
               <Path>dd/d9f/class_view.html</Path>
              </Node>
             </Subnodes>
+           </Node>
+           <Node>
+            <Name>Primitives::Point2D&lt; T &gt;</Name>
+            <Path>dc/d51/struct_primitives_1_1_point2_d.html</Path>
            </Node>
            <Node>
             <Name>Primitives::PrimitivesManager</Name>
@@ -1548,6 +1643,10 @@
                    <Node>
                     <Name>OpenGLStart.hpp</Name>
                     <Path>d6/d59/_open_g_l_start_8hpp_source.html</Path>
+                   </Node>
+                   <Node>
+                    <Name>Point.hpp</Name>
+                    <Path>db/deb/_point_8hpp_source.html</Path>
                    </Node>
                    <Node>
                     <Name>Primitive.hpp</Name>

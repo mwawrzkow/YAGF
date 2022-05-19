@@ -252,6 +252,24 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>Primitives::Color</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>Primitives::Color</Scope>
+    </TokenIdentifier>
+    <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Primitives::ColorRGBA</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>Primitives::ColorRGBA</Scope>
+    </TokenIdentifier>
+    <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>Primitives::Line</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -405,6 +423,51 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>setR</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Square</Scope>
+    </TokenIdentifier>
+    <Path>de/ddd/class_primitives_1_1_square.html</Path>
+    <Anchor>a42e53f420e15b998d9faacff846e4e4e</Anchor>
+    <Abstract>Set R color value.</Abstract>
+    <DeclaredIn>Square.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setG</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Square</Scope>
+    </TokenIdentifier>
+    <Path>de/ddd/class_primitives_1_1_square.html</Path>
+    <Anchor>af03afda4acb1458e591b8ffe8731888a</Anchor>
+    <Abstract>Set G color value.</Abstract>
+    <DeclaredIn>Square.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setColor</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Square</Scope>
+    </TokenIdentifier>
+    <Path>de/ddd/class_primitives_1_1_square.html</Path>
+    <Anchor>a2772ca56d742bdbf12dfb5aa50837425</Anchor>
+    <Abstract>Set the Color value.</Abstract>
+    <DeclaredIn>Square.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Primitives::Point2D</Name>
+      <APILanguage>c</APILanguage>
+      <Type>tmplt</Type>
+      <Scope>Primitives::Point2D</Scope>
+    </TokenIdentifier>
+    <Path>dc/d51/struct_primitives_1_1_point2_d.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>Primitives::PrimitivesManager</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -531,13 +594,49 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>setR</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Square</Scope>
+    </TokenIdentifier>
+    <Path>de/ddd/class_primitives_1_1_square.html</Path>
+    <Anchor>a42e53f420e15b998d9faacff846e4e4e</Anchor>
+    <Abstract>Set R color value.</Abstract>
+    <DeclaredIn>Square.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setG</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Square</Scope>
+    </TokenIdentifier>
+    <Path>de/ddd/class_primitives_1_1_square.html</Path>
+    <Anchor>af03afda4acb1458e591b8ffe8731888a</Anchor>
+    <Abstract>Set G color value.</Abstract>
+    <DeclaredIn>Square.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setColor</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Square</Scope>
+    </TokenIdentifier>
+    <Path>de/ddd/class_primitives_1_1_square.html</Path>
+    <Anchor>a2772ca56d742bdbf12dfb5aa50837425</Anchor>
+    <Abstract>Set the Color value.</Abstract>
+    <DeclaredIn>Square.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>rotateVertices</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
       <Scope>Primitives::Square</Scope>
     </TokenIdentifier>
     <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>ac7d1870270e68f16f14d9b3a3404ffed</Anchor>
+    <Anchor>a2698e8832e17dda2edf8e598a2be282f</Anchor>
     <Abstract>Rotate the vertices of the square.</Abstract>
     <DeclaredIn>Square.hpp</DeclaredIn>
   </Token>
