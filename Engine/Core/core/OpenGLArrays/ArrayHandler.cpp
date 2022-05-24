@@ -76,7 +76,7 @@ namespace GPU
     {
         for (int i = 0; i < this->GPUSpace.size(); i++)
         {
-            if (this->GPUSpace[i].Taken())
+            if (!this->GPUSpace[i].Taken())
                 return true;
         }
         return false;
