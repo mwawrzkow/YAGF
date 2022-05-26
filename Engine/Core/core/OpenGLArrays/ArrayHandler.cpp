@@ -58,11 +58,11 @@ namespace GPU
     bool ArrayHandler::alocateBuffer(int size)
     {
         unsigned int VAO[size], VBO[size], EBO[size];
-        std::cout << "Allocating the buffer" << std::endl;
+        // std::cout << "Allocating the buffer" << std::endl;
         glGenVertexArrays(size, VAO);
         glGenBuffers(size, VBO);
         glGenBuffers(size, EBO);
-        std::cout << "Ended alocating the buffer" << std::endl;
+        // std::cout << "Ended alocating the buffer" << std::endl;
         if (areRepetitions(VAO, size) || areRepetitions(VBO, size || areRepetitions(EBO, size)))
             return false;
         for (int i = 0; i < size; i++)

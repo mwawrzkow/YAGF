@@ -24,14 +24,12 @@ add_library(gl_Core
 target_include_directories(gl_Core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glfw/include )
 target_include_directories(gl_Core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glew/include )
 
-# set(GL_DEF glfw 
-#         glew_static)
-# set(LIBS ${engineLibs} ${GL_DEF})
+
 add_subdirectory(glfw)
 add_subdirectory(glew)
 set(GL_DEF glfw 
 glew_static)
-# add_subdirectory(core/FastMath)
+
 set(engineLibs gl_Core)
 target_link_libraries(gl_Core ${GL_DEF})
 

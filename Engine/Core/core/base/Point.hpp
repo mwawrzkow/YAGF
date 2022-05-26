@@ -1,7 +1,14 @@
-
+#include <stdexcept>
 
 namespace Primitives
 {
+    enum ColorType{ 
+        RED,
+        GREEN,
+        BLUE,
+        ALPHA,
+        ERROR, 
+    };
     template <typename T>
     struct Point2D
     {
@@ -26,6 +33,21 @@ namespace Primitives
         T r = 0,
           g = 0,
           b = 0;
+        T& operator[](ColorType type)
+        {
+            switch (type)
+            {
+            case ColorType::RED:
+                return r;
+            case ColorType::GREEN:
+                return g;
+            case ColorType::BLUE:
+                return b;
+            default:
+                throw std::invalid_argument("Invalid color type");
+                break;
+            }
+        }
     };
     typedef struct Color<float> ColorF;
     typedef Color<int> ColorI;
@@ -42,6 +64,17 @@ namespace Primitives
     struct ColorRGBA{ 
         Color<T> color; 
         T alpha = 0;
+        T& operator[](ColorType type)
+        {
+            switch (type)
+            {
+            case ColorType::ALPHA:
+                return alpha;
+            default:
+                return color[type];
+                break;
+            }
+        }
     };
     typedef struct ColorRGBA<float> ColorRGBAF;
     typedef ColorRGBA<int> ColorRGBAI;
