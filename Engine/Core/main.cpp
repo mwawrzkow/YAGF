@@ -85,10 +85,17 @@ int main(int argc, char **argv)
     WindowProperties->setWindowWidth(width);
     WindowProperties->getTextures()->alocateTextureSpace(1);
     std::vector<Primitives::Square> sqrtVect;
-    sqrtVect.push_back(Primitives::Square(100, height / 2.0f, 1000));
-    sqrtVect[0].setTexture("Square.png");
-    sqrtVect.push_back(Primitives::Square(500, 300, 100));
-    sqrtVect[1].setTexture("Square.png");
+    for(int i = 0; i < 10; i++)
+    for(int j = 0; j <10; j++ )
+        {
+            Primitives::Square s = Primitives::Square(i*100+50, j*100+50, 100, 10); 
+            s.setTexture("Square.png");
+            sqrtVect.push_back(s);
+        }
+    // sqrtVect.push_back(Primitives::Square(100, height / 2.0f, 1000));
+    // sqrtVect[0].setTexture("Square.png");
+    // sqrtVect.push_back(Primitives::Square(500, 300, 100));
+    // sqrtVect[1].setTexture("Square.png");
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
     glfwSetKeyCallback(window, onKeyCallback);
