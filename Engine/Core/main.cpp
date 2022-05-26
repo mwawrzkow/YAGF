@@ -65,7 +65,7 @@ std::string readFile(const std::string &fileLoc)
 int main(int argc, char **argv)
 {
 
-    int width = 1281, height = 720;
+    int width = 1280, height = 720;
     GLFWwindow *window = OpenGLInstance::InitWindow(width, height);
 
     OpenGLInstance::setClearColor(0.0, 0.0, 0.0, 1);
