@@ -636,7 +636,7 @@
       <Scope>Primitives::Square</Scope>
     </TokenIdentifier>
     <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a2698e8832e17dda2edf8e598a2be282f</Anchor>
+    <Anchor>ac3c0644e825c9419e4f474f9cb20c3af</Anchor>
     <Abstract>Rotate the vertices of the square.</Abstract>
     <DeclaredIn>Square.hpp</DeclaredIn>
   </Token>
