@@ -72,28 +72,32 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PRIMITIVE_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PRIMITIVE_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;vertexHandler.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="../../d1/df5/class_primitive.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/df5/class_primitive.html">Primitive</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d2b/classvertex_handler.html">vertexHandler</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">enum</span> prim_type</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        RECTANAGLE,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        TRIANGLE,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        SQUARE,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    } TYPE;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">float</span> sin(<span class="keywordtype">float</span> r);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">float</span> cos(<span class="keywordtype">float</span> r);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d1/df5/class_primitive.html">Primitive</a>(prim_type);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isVisible() = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isNear(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>) = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d1/df5/class_primitive.html">Primitive</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef M_PI</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//Strange but needed fix for M_PI not defined in math.h on Windows machines</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define M_PI        3.14159265358979323846</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="../../d1/df5/class_primitive.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d1/df5/class_primitive.html">Primitive</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d2b/classvertex_handler.html">vertexHandler</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">enum</span> prim_type</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        RECTANAGLE,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        TRIANGLE,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        SQUARE,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    } TYPE;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">float</span> sin(<span class="keywordtype">float</span> r);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> cos(<span class="keywordtype">float</span> r);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d1/df5/class_primitive.html">Primitive</a>(prim_type);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isVisible() = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isNear(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>) = 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="../../d1/df5/class_primitive.html">Primitive</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_primitive_html"><div class="ttname"><a href="../../d1/df5/class_primitive.html">Primitive</a></div><div class="ttdef"><b>Definition:</b> Primitive.hpp:5</div></div>
+<div class="ttc" id="aclass_primitive_html"><div class="ttname"><a href="../../d1/df5/class_primitive.html">Primitive</a></div><div class="ttdef"><b>Definition:</b> Primitive.hpp:9</div></div>
 <div class="ttc" id="aclassvertex_handler_html"><div class="ttname"><a href="../../d9/d2b/classvertex_handler.html">vertexHandler</a></div><div class="ttdef"><b>Definition:</b> vertexHandler.hpp:9</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
