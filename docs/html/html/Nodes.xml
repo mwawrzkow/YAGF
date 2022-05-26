@@ -1007,6 +1007,11 @@
               <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
               <Subnodes>
                <Node>
+                <Name>operator[]</Name>
+                <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
+                <Anchor>ac1761f3415cfbf709aedf2bc2e2b69ee</Anchor>
+               </Node>
+               <Node>
                 <Name>b</Name>
                 <Path>d1/d5f/struct_primitives_1_1_color.html</Path>
                 <Anchor>a946ac10debccbb55c5315b0182405b24</Anchor>
@@ -1027,6 +1032,11 @@
               <Name>ColorRGBA</Name>
               <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
               <Subnodes>
+               <Node>
+                <Name>operator[]</Name>
+                <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
+                <Anchor>a10da9a0f7e55097ca5b5558d647dc061</Anchor>
+               </Node>
                <Node>
                 <Name>alpha</Name>
                 <Path>db/d6b/struct_primitives_1_1_color_r_g_b_a.html</Path>
@@ -1139,17 +1149,17 @@
                <Node>
                 <Name>colors_ptr_array</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>abc123eb0681d7f4212923d870399255d</Anchor>
+                <Anchor>a5d12685508943a132ec337efe49269af</Anchor>
                </Node>
                <Node>
                 <Name>verticies_ptr_array</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a19b14c890885cb553868ad43a029c818</Anchor>
+                <Anchor>a9d2d9e2dcf1ae29d49b8d56fd1257bc8</Anchor>
                </Node>
                <Node>
                 <Name>Square</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a14dca8bc11ee40a5380294ef32ea9ccc</Anchor>
+                <Anchor>add1c9a260286195df05e9acb271b06ca</Anchor>
                </Node>
                <Node>
                 <Name>Square</Name>
@@ -1257,14 +1267,24 @@
                 <Anchor>aa5987c3269ff1d0df07ccffcc6f1cbdf</Anchor>
                </Node>
                <Node>
+                <Name>SetVerticeColor</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a6e5a99a500804302502e34055251db5b</Anchor>
+               </Node>
+               <Node>
                 <Name>angle</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a70b1a13abd57f769754e1020f4ca24e2</Anchor>
                </Node>
                <Node>
-                <Name>color_ptr</Name>
+                <Name>color_arr</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>af6f93a817b79e88f77150d5dc625c16b</Anchor>
+                <Anchor>a3fd2ca878e9c3bd1080e72f39afc2884</Anchor>
+               </Node>
+               <Node>
+                <Name>inc</Name>
+                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Anchor>a0a0341207874b4c35b11e40f33961371</Anchor>
                </Node>
                <Node>
                 <Name>size</Name>
@@ -1272,9 +1292,9 @@
                 <Anchor>a4204b6201cd093d66b54178abb7ec2a4</Anchor>
                </Node>
                <Node>
-                <Name>verticies_ptr</Name>
+                <Name>verticies_arr</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a8110c202897fefa819872cc1ce486d7d</Anchor>
+                <Anchor>a2d4204afd007f18dbb056f25b991994b</Anchor>
                </Node>
                <Node>
                 <Name>window</Name>

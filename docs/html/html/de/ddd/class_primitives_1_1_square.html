@@ -88,9 +88,9 @@ Inheritance diagram for Primitives::Square:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14dca8bc11ee40a5380294ef32ea9ccc"><td class="memItemLeft" align="right" valign="top"><a id="a14dca8bc11ee40a5380294ef32ea9ccc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Square</b> (float, float, float, float)</td></tr>
-<tr class="separator:a14dca8bc11ee40a5380294ef32ea9ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1c9a260286195df05e9acb271b06ca"><td class="memItemLeft" align="right" valign="top"><a id="add1c9a260286195df05e9acb271b06ca"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Square</b> (float, float, float, float=1.0f)</td></tr>
+<tr class="separator:add1c9a260286195df05e9acb271b06ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a610d88954d4dccd6a28413650e1518b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a610d88954d4dccd6a28413650e1518b4">setPosition</a> (float, float)</td></tr>
 <tr class="memdesc:a610d88954d4dccd6a28413650e1518b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Position object.  <a href="../../de/ddd/class_primitives_1_1_square.html#a610d88954d4dccd6a28413650e1518b4">More...</a><br /></td></tr>
 <tr class="separator:a610d88954d4dccd6a28413650e1518b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,15 +146,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setB</b> (float)</td>
 <tr class="memitem:a6cd731ab147258b82194802c26734349"><td class="memItemLeft" align="right" valign="top"><a id="a6cd731ab147258b82194802c26734349"></a>
 <a class="el" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;s)</td></tr>
 <tr class="separator:a6cd731ab147258b82194802c26734349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5a99a500804302502e34055251db5b"><td class="memItemLeft" align="right" valign="top"><a id="a6e5a99a500804302502e34055251db5b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVerticeColor</b> (int, float, ColorType=ERROR)</td></tr>
+<tr class="separator:a6e5a99a500804302502e34055251db5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a19b14c890885cb553868ad43a029c818"><td class="memItemLeft" align="right" valign="top"><a id="a19b14c890885cb553868ad43a029c818"></a>
-typedef std::array&lt; std::unique_ptr&lt; <a class="el" href="../../dc/d51/struct_primitives_1_1_point2_d.html">PointF</a> &gt;, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>verticies_ptr_array</b></td></tr>
-<tr class="separator:a19b14c890885cb553868ad43a029c818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc123eb0681d7f4212923d870399255d"><td class="memItemLeft" align="right" valign="top"><a id="abc123eb0681d7f4212923d870399255d"></a>
-typedef std::array&lt; std::unique_ptr&lt; <a class="el" href="../../db/d6b/struct_primitives_1_1_color_r_g_b_a.html">ColorRGBAF</a> &gt;, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colors_ptr_array</b></td></tr>
-<tr class="separator:abc123eb0681d7f4212923d870399255d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2d9e2dcf1ae29d49b8d56fd1257bc8"><td class="memItemLeft" align="right" valign="top"><a id="a9d2d9e2dcf1ae29d49b8d56fd1257bc8"></a>
+typedef std::array&lt; <a class="el" href="../../dc/d51/struct_primitives_1_1_point2_d.html">PointF</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>verticies_ptr_array</b></td></tr>
+<tr class="separator:a9d2d9e2dcf1ae29d49b8d56fd1257bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d12685508943a132ec337efe49269af"><td class="memItemLeft" align="right" valign="top"><a id="a5d12685508943a132ec337efe49269af"></a>
+typedef std::array&lt; <a class="el" href="../../db/d6b/struct_primitives_1_1_color_r_g_b_a.html">ColorRGBAF</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colors_ptr_array</b></td></tr>
+<tr class="separator:a5d12685508943a132ec337efe49269af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Private Types inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
 <tr class="memitem:a6ae9dacdf47c20300f8208680b17b3b4 inherit pub_types_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a6ae9dacdf47c20300f8208680b17b3b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>prim_type</b> { <b>RECTANAGLE</b>, 
 <b>TRIANGLE</b>, 
@@ -214,15 +217,18 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
 <tr class="memitem:a4204b6201cd093d66b54178abb7ec2a4"><td class="memItemLeft" align="right" valign="top"><a id="a4204b6201cd093d66b54178abb7ec2a4"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
 <tr class="separator:a4204b6201cd093d66b54178abb7ec2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8110c202897fefa819872cc1ce486d7d"><td class="memItemLeft" align="right" valign="top"><a id="a8110c202897fefa819872cc1ce486d7d"></a>
-verticies_ptr_array&#160;</td><td class="memItemRight" valign="bottom"><b>verticies_ptr</b> = {}</td></tr>
-<tr class="separator:a8110c202897fefa819872cc1ce486d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f93a817b79e88f77150d5dc625c16b"><td class="memItemLeft" align="right" valign="top"><a id="af6f93a817b79e88f77150d5dc625c16b"></a>
-colors_ptr_array&#160;</td><td class="memItemRight" valign="bottom"><b>color_ptr</b></td></tr>
-<tr class="separator:af6f93a817b79e88f77150d5dc625c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4204afd007f18dbb056f25b991994b"><td class="memItemLeft" align="right" valign="top"><a id="a2d4204afd007f18dbb056f25b991994b"></a>
+verticies_ptr_array&#160;</td><td class="memItemRight" valign="bottom"><b>verticies_arr</b> = {}</td></tr>
+<tr class="separator:a2d4204afd007f18dbb056f25b991994b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd2ca878e9c3bd1080e72f39afc2884"><td class="memItemLeft" align="right" valign="top"><a id="a3fd2ca878e9c3bd1080e72f39afc2884"></a>
+colors_ptr_array&#160;</td><td class="memItemRight" valign="bottom"><b>color_arr</b> = {}</td></tr>
+<tr class="separator:a3fd2ca878e9c3bd1080e72f39afc2884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70b1a13abd57f769754e1020f4ca24e2"><td class="memItemLeft" align="right" valign="top"><a id="a70b1a13abd57f769754e1020f4ca24e2"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b> = 0.0f</td></tr>
 <tr class="separator:a70b1a13abd57f769754e1020f4ca24e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0341207874b4c35b11e40f33961371"><td class="memItemLeft" align="right" valign="top"><a id="a0a0341207874b4c35b11e40f33961371"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>inc</b> [6] = {0, 1, 2, 0, 2, 3}</td></tr>
+<tr class="separator:a0a0341207874b4c35b11e40f33961371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Private Attributes inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
 <tr class="memitem:ad073752488653318172009779f108351 inherit pub_attribs_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="ad073752488653318172009779f108351"></a>
 enum Primitive::prim_type&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE</b></td></tr>
