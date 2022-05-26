@@ -6,7 +6,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-class vertexHandler
+class VertexHandler
 {
 private:
     /* data */
@@ -14,9 +14,10 @@ private:
     unsigned int texture;
 
 public:
-    vertexHandler(/* args */);
-    vertexHandler(const vertexHandler &other);
-    ~vertexHandler();
+    VertexHandler(/* args */);
+    VertexHandler(const VertexHandler &other);
+    VertexHandler &operator=(const VertexHandler &other);
+    ~VertexHandler();
     void setVertexHandler(float vertices[], int VerticesSize, unsigned int indices[], int indicesSize);
     void setTextureData(const std::string);
     int getTexture(); 

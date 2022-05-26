@@ -2,7 +2,7 @@
 #include "Primitive.hpp"
 #include <math.h>
 
-// Primitive::Primitive(prim_type, float vert[], int sizofvert, int indc[], int sizofindc):vertexHandler(){
+// Primitive::Primitive(prim_type, float vert[], int sizofvert, int indc[], int sizofindc):VertexHandler(){
 //     this->setVertexHandler(vert,sizofvert, indc, sizofindc);
 // }
 Primitive::Primitive(prim_type type)
@@ -10,9 +10,14 @@ Primitive::Primitive(prim_type type)
     this->TYPE = type; 
 }
 Primitive::Primitive(const Primitive &p)
-:vertexHandler(p)
+:VertexHandler(p)
 {
     this->TYPE = p.TYPE;
+}
+Primitive &Primitive::operator=(const Primitive &p)
+{
+    this->TYPE = p.TYPE;
+    return *this;
 }
 Primitive::~Primitive()
 {

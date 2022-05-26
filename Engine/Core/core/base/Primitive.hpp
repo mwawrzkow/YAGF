@@ -6,7 +6,7 @@
 //Strange but needed fix for M_PI not defined in math.h on Windows machines
 #define M_PI        3.14159265358979323846
 #endif
-class Primitive : public vertexHandler
+class Primitive : public VertexHandler
 {
 protected:
     enum prim_type
@@ -18,11 +18,12 @@ protected:
 public:
     Primitive(prim_type);
     Primitive(const Primitive &p);
+    Primitive &operator=(const Primitive &p);
+    virtual ~Primitive();
     float sin(float r);
     float cos(float r);
     virtual bool isVisible() = 0;
     virtual bool isNear(float, float, float) = 0;
-    virtual ~Primitive();
 };
 
 #endif
