@@ -4,9 +4,9 @@
 #include <iostream>
 namespace Primitives
 {
-    Square::verticies_ptr_array Square::rotateVertices()
+    Square::verticies_array Square::rotateVertices()
     {
-        Square::verticies_ptr_array rotated_vertices = {};
+        Square::verticies_array rotated_vertices = {};
         for (int i = 0; i < 4; i++)
             rotated_vertices[i] = {verticies_arr[i].x, verticies_arr[i].y};
         float px = (rotated_vertices[0].x + rotated_vertices[1].x) / 2;
@@ -26,10 +26,10 @@ namespace Primitives
         const int &height = window->getWindowHeight();
         auto vertices = rotateVertices();
         float vert_ptr[] = {
-            vertices[0].x / float(width)-1.0f, vertices[0].y / float(height)-1.0f,
-            vertices[1].x / float(width)-1.0f, vertices[1].y / float(height)-1.0f,
-            vertices[2].x / float(width)-1.0f, vertices[2].y / float(height)-1.0f,
-            vertices[3].x / float(width)-1.0f, vertices[3].y / float(height)-1.0f};
+            vertices[0].x / float(width) - 1.0f, vertices[0].y / float(height) - 1.0f,
+            vertices[1].x / float(width) - 1.0f, vertices[1].y / float(height) - 1.0f,
+            vertices[2].x / float(width) - 1.0f, vertices[2].y / float(height) - 1.0f,
+            vertices[3].x / float(width) - 1.0f, vertices[3].y / float(height) - 1.0f};
         float vert[] = {
             /*    cords                   |    RGBA color                                                                       | TexturePos*/
             vert_ptr[0], vert_ptr[1], 0.0f, color_arr[0].color.r, color_arr[0].color.g, color_arr[0].color.b, color_arr[0].alpha, 1.0f, 1.0f,
@@ -37,6 +37,13 @@ namespace Primitives
             vert_ptr[4], vert_ptr[5], 0.0f, color_arr[2].color.r, color_arr[2].color.g, color_arr[2].color.b, color_arr[2].alpha, 0.0f, 0.0f,
             vert_ptr[6], vert_ptr[7], 0.0f, color_arr[3].color.r, color_arr[3].color.g, color_arr[3].color.b, color_arr[3].alpha, 1.0f, 0.0f};
         this->setVertexHandler(vert, sizeof(vert), this->inc, sizeof(this->inc));
+    }
+    void Square::calculateVerticesArr()
+    {
+        verticies_arr[0] = {x - size / 2, y - size / 2};
+        verticies_arr[1] = {x + size / 2, y - size / 2};
+        verticies_arr[2] = {x + size / 2, y + size / 2};
+        verticies_arr[3] = {x - size / 2, y + size / 2};
     }
     Square::Square(float x, float y, float a, float alpha)
         : Primitive(Primitive::prim_type::SQUARE)
@@ -51,15 +58,12 @@ namespace Primitives
         this->x = x;
         this->y = y;
         this->size = a;
-        this->verticies_arr[0] = PointF{x - this->size/2, y - this->size/2};
-        this->verticies_arr[1] = PointF{x + this->size/2, y - this->size/2};
-        this->verticies_arr[2] = PointF{x + this->size/2, y + this->size/2};
-        this->verticies_arr[3] = PointF{x - this->size/2, y + this->size/2};
+        calculateVerticesArr();
         window = &Global::WindowProperties::getInstance();
         calculateMatrixes();
     }
     Square::Square(const Square &s)
-        : Primitive(Primitive::prim_type::SQUARE)
+        : Primitive(s)
     {
         for (int i = 0; i < 4; i++)
         {
@@ -74,8 +78,28 @@ namespace Primitives
         this->x = s.x;
         this->y = s.y;
         this->size = s.size;
-        this->window = s.window;
+        this->window = &Global::WindowProperties::getInstance();
         this->calculateMatrixes();
+    }
+    Square &Square::operator=(const Square &s)
+    {
+        this->TYPE = s.TYPE;
+        for (int i = 0; i < 4; i++)
+        {
+            this->verticies_arr[i] = PointF{s.verticies_arr[i].x, s.verticies_arr[i].y};
+            this->color_arr[i] =
+                ColorRGBAF{
+                    {s.color_arr[i].color.r,
+                     s.color_arr[i].color.g,
+                     s.color_arr[i].color.b},
+                    s.color_arr[i].alpha};
+        }
+        this->x = s.x;
+        this->y = s.y;
+        this->size = s.size;
+        this->window = &Global::WindowProperties::getInstance();
+        this->calculateMatrixes();
+        return *this;
     }
     void Square::setTexture(std::string data)
     {
@@ -85,6 +109,7 @@ namespace Primitives
     {
         this->x = x;
         this->y = y;
+        calculateVerticesArr();
         if (isVisible())
             calculateMatrixes();
     }
@@ -127,8 +152,9 @@ namespace Primitives
     {
         const int &width = window->getWindowWidth();
         const int &height = window->getWindowHeight();
-        if ((x > -size) && (x < width + size))
-            return y > -size && y < height + size;
+        if (x >= 0 || x <= width)
+            if (y >= 0 || y <= height)
+                return true;
         return false;
     }
     void Square::Display()
@@ -192,26 +218,6 @@ namespace Primitives
         }
         if (isVisible())
             calculateMatrixes();
-    }
-    Square &Square::operator=(const Square &s)
-    {
-        this->TYPE = s.TYPE;
-        for (int i = 0; i < 4; i++)
-        {
-            this->verticies_arr[i] = PointF{s.verticies_arr[i].x, s.verticies_arr[i].y};
-            this->color_arr[i] =
-                ColorRGBAF{
-                    {s.color_arr[i].color.r,
-                     s.color_arr[i].color.g,
-                     s.color_arr[i].color.b},
-                    s.color_arr[i].alpha};
-        }
-        this->x = s.x;
-        this->y = s.y;
-        this->size = s.size;
-        window = &Global::WindowProperties::getInstance();
-        calculateMatrixes();
-        return *this;
     }
     void Square::SetVerticeColor(int index, float value, ColorType colorType)
     {

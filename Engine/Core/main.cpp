@@ -85,34 +85,39 @@ int main(int argc, char **argv)
     WindowProperties->setWindowWidth(width);
     WindowProperties->getTextures()->alocateTextureSpace(1);
     std::vector<Primitives::Square> sqrtVect;
-    for(int i = 0; i < 10; i++)
-    for(int j = 0; j <10; j++ )
-        {
-            Primitives::Square s = Primitives::Square(i*100+50, j*100+50, 100, 10); 
-            s.setTexture("Square.png");
-            sqrtVect.push_back(s);
+    for(int i = 0; i < 50; i++){
+        for(int j = 0; j < 30; j++)
+        { 
+            sqrtVect.push_back(Primitives::Square(i* 100+45,j * 100 ,75));
+            sqrtVect[sqrtVect.size() - 1].setTexture("Square.png");
         }
-    // sqrtVect.push_back(Primitives::Square(100, height / 2.0f, 1000));
-    // sqrtVect[0].setTexture("Square.png");
-    // sqrtVect.push_back(Primitives::Square(500, 300, 100));
-    // sqrtVect[1].setTexture("Square.png");
+    }
     glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
+    // glBindVertexArray(0);
     glfwSetKeyCallback(window, onKeyCallback);
+    float sin = 0;
+    float cos = 0;
+    float angle = 0;
     while (!glfwWindowShouldClose(window))
     {
-
+        sin = sinf(angle);
+        cos = cosf(angle);
+        angle += 0.1;
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glfwGetFramebufferSize(window, &width, &height);
         glViewport(0, 0, width, height);
         glfwPollEvents();
         WindowProperties->setWindowHeight(height);
         WindowProperties->setWindowWidth(width);
-        for (int i = 0; i < sqrtVect.size(); i++)
+        for(auto& sqrt : sqrtVect)
         {
-            sqrtVect[i].Display();
+            //set random color for each square
+            float color[] = {(float)rand()/RAND_MAX, (float)rand()/RAND_MAX, (float)rand()/RAND_MAX};
+            sqrt.setColor(color[0], color[1], color[2]);
+            sqrt.Move(sin, cos);
+            sqrt.rotate(0.1f);
+            sqrt.Display();
         }
-        sqrtVect[0].rotate(0.01f);
         glfwSwapBuffers(window);
     }
     glDeleteProgram(ShaderProgram);

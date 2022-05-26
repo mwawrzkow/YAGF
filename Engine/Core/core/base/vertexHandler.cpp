@@ -22,6 +22,13 @@ vertexHandler::vertexHandler(/* args */)
     printf("VAO: %i,  VBO: %i, EBO: %i \n", VAO, VBO, EBO);
     #endif
 }
+vertexHandler::vertexHandler(const vertexHandler &other)
+{
+    this->VAO = other.VAO;
+    this->VBO = other.VBO;
+    this->EBO = other.EBO;
+    this->texture = other.texture;
+}
 
 vertexHandler::~vertexHandler()
 {

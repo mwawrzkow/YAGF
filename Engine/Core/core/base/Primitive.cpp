@@ -9,6 +9,11 @@ Primitive::Primitive(prim_type type)
 {
     this->TYPE = type; 
 }
+Primitive::Primitive(const Primitive &p)
+:vertexHandler(p)
+{
+    this->TYPE = p.TYPE;
+}
 Primitive::~Primitive()
 {
 }

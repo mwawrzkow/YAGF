@@ -16,9 +16,10 @@ protected:
         SQUARE,
     } TYPE;
 public:
+    Primitive(prim_type);
+    Primitive(const Primitive &p);
     float sin(float r);
     float cos(float r);
-    Primitive(prim_type);
     virtual bool isVisible() = 0;
     virtual bool isNear(float, float, float) = 0;
     virtual ~Primitive();

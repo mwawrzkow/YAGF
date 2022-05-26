@@ -14,14 +14,15 @@ private:
     unsigned int texture;
 
 public:
+    vertexHandler(/* args */);
+    vertexHandler(const vertexHandler &other);
+    ~vertexHandler();
     void setVertexHandler(float vertices[], int VerticesSize, unsigned int indices[], int indicesSize);
     void setTextureData(const std::string);
     int getTexture(); 
     int getVBO(); 
     int getEBO(); 
     int getVAO(); 
-    vertexHandler(/* args */);
-    ~vertexHandler();
 };
 
 #endif

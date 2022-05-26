@@ -10,12 +10,12 @@ namespace Primitives
     class Square : private Primitive
     {
     private:
-        typedef std::array<PointF, 4> verticies_ptr_array;
-        typedef std::array<ColorRGBAF, 4> colors_ptr_array;
+        typedef std::array<PointF, 4> verticies_array;
+        typedef std::array<ColorRGBAF, 4> colors_array;
         Global::WindowProperties *window;
         float x, y, size; // x and y coordinates of the center of the square
-        verticies_ptr_array verticies_arr = {};
-        colors_ptr_array color_arr = {};
+        verticies_array verticies_arr = {};
+        colors_array color_arr = {};
         float angle = 0.0f;
         unsigned int inc[6] = {0, 1, 2, 0, 2, 3};
         void calculateMatrixes();
@@ -25,10 +25,14 @@ namespace Primitives
          * @param vertices - vertices of the square
          * @param rot - rotation matrix
          */
-        verticies_ptr_array rotateVertices();
+        verticies_array rotateVertices();
+        void calculateVerticesArr();
 
     public:
         Square(float, float, float, float = 1.0f);
+        Square(const Square &s);
+        Square &operator=(const Square &s);
+        virtual ~Square();
         /**
          * @brief Set the Position object
          * @param float x - x coordinate of the center of the square
@@ -111,10 +115,7 @@ namespace Primitives
          * @param float alpha - alpha value
          */
         void setColor(float, float, float, float = 1.0f);
-        Square(const Square &s);
-        Square &operator=(const Square &s);
         void SetVerticeColor(int, float, ColorType = ERROR);
-        virtual ~Square();
     };
 
 }
