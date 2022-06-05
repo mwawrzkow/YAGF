@@ -5,7 +5,7 @@
  namespace Primitives{ 
      class Line : public Primitive{
          private: 
-         std::vector<Rectanagle> squares;
+         std::vector<Rectanagle> rectanagles;
          public:  
          /**
           * @brief Construct a new Line object
@@ -36,6 +36,7 @@
            */
           bool isVisible() override; 
           bool isNear(float x, float y, float radius) override;
+          void setTexture(std::string);
 
      };
  }

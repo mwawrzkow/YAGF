@@ -86,18 +86,19 @@ int main(int argc, char **argv)
     WindowProperties->setWindowWidth(width);
     WindowProperties->getTextures()->alocateTextureSpace(1);
     std::vector<Primitive*> primVect;
-    for(int i = 0; i < 50; i++){
-        for(int j = 0; j < 30; j++)
-        { 
-            Primitives::Rectanagle* sq = new Primitives::Rectanagle(i* 100+45,j * 100, 25, 75);
-            sq->setRotation(j*i/M_PI);
-            primVect.push_back(sq);
-            ((Primitives::Rectanagle*)primVect[primVect.size() - 1])->setTexture("Square.png");
-        }
-    }
+    // for(int i = 0; i < 50; i++){
+    //     for(int j = 0; j < 30; j++)
+    //     { 
+    //         Primitives::Rectanagle* sq = new Primitives::Rectanagle(i* 100+45,j * 100, 75, 50);
+    //         sq->setRotation(j*i/M_PI);
+    //         primVect.push_back(sq);
+    //         ((Primitives::Rectanagle*)primVect[primVect.size() - 1])->setTexture("Square.png");
+    //     }
+    // }
     //create line 
-    // Primitives::Line line(0,0, 100,100, 100,1.0f,1.0f,1.0f);
-    // primVect.push_back(&line);
+    Primitives::Line line(0,0, 0,500, 1.0f,1.0f,1.0f,1.0f);
+    line.setTexture("Square.png");
+    primVect.push_back(&line);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     // glBindVertexArray(0);
     glfwSetKeyCallback(window, onKeyCallback);
@@ -118,8 +119,6 @@ int main(int argc, char **argv)
         for(int i = 0; i <primVect.size(); i++)
         {
             primVect[i]->Display();
-            //rotate sqrt but first cast it to square
-            ((Primitives::Rectanagle*)primVect[i])->rotate(0.01f);
         }
         glfwSwapBuffers(window);
     }
