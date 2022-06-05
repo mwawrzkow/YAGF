@@ -1084,9 +1084,14 @@
                 <Anchor>ac9a77d1edb8c913f0e89636d8e63ba44</Anchor>
                </Node>
                <Node>
-                <Name>squares</Name>
+                <Name>setTexture</Name>
                 <Path>d2/df4/class_primitives_1_1_line.html</Path>
-                <Anchor>acea662c7f5d346a03f3618fb0abccfdc</Anchor>
+                <Anchor>ac5a4d909bd46a0950ebdb8115ff80781</Anchor>
+               </Node>
+               <Node>
+                <Name>rectanagles</Name>
+                <Path>d2/df4/class_primitives_1_1_line.html</Path>
+                <Anchor>a033a1849f6539cb6b407eed1f85c49ba</Anchor>
                </Node>
               </Subnodes>
              </Node>
