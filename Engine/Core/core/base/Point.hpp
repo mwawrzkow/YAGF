@@ -1,3 +1,5 @@
+#ifndef TYPES_HPP
+#define TYPES_HPP
 #include <stdexcept>
 
 namespace Primitives
@@ -87,3 +89,4 @@ namespace Primitives
     typedef ColorRGBA<char> ColorRGBAC;
     typedef ColorRGBA<short> ColorRGBAS;
 }
+#endif

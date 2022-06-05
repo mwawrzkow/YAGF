@@ -14,7 +14,7 @@ private:
     unsigned int texture;
 
 public:
-    VertexHandler(/* args */);
+    VertexHandler(bool isDefaultPrimitive);
     VertexHandler(const VertexHandler &other);
     VertexHandler &operator=(const VertexHandler &other);
     ~VertexHandler();

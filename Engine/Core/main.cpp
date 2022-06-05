@@ -7,6 +7,7 @@
 #include "core/base/vertexHandler.hpp"
 #include "core/WindowProperties.hpp"
 #include "core/primitives/Square.hpp"
+#include "core/primitives/Line.hpp"
 #include <vector>
 #include <math.h>
 #include "core/base/OpenGLStart.hpp"
@@ -84,14 +85,19 @@ int main(int argc, char **argv)
     WindowProperties->setWindowHeight(height);
     WindowProperties->setWindowWidth(width);
     WindowProperties->getTextures()->alocateTextureSpace(1);
-    std::vector<Primitives::Square> sqrtVect;
+    std::vector<Primitive*> primVect;
     for(int i = 0; i < 50; i++){
         for(int j = 0; j < 30; j++)
         { 
-            sqrtVect.push_back(Primitives::Square(i* 100+45,j * 100 ,75));
-            sqrtVect[sqrtVect.size() - 1].setTexture("Square.png");
+            Primitives::Rectanagle* sq = new Primitives::Rectanagle(i* 100+45,j * 100, 25, 75);
+            sq->setRotation(j*i/M_PI);
+            primVect.push_back(sq);
+            ((Primitives::Rectanagle*)primVect[primVect.size() - 1])->setTexture("Square.png");
         }
     }
+    //create line 
+    // Primitives::Line line(0,0, 100,100, 100,1.0f,1.0f,1.0f);
+    // primVect.push_back(&line);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     // glBindVertexArray(0);
     glfwSetKeyCallback(window, onKeyCallback);
@@ -109,14 +115,11 @@ int main(int argc, char **argv)
         glfwPollEvents();
         WindowProperties->setWindowHeight(height);
         WindowProperties->setWindowWidth(width);
-        for(auto& sqrt : sqrtVect)
+        for(int i = 0; i <primVect.size(); i++)
         {
-            //set random color for each square
-            float color[] = {(float)rand()/RAND_MAX, (float)rand()/RAND_MAX, (float)rand()/RAND_MAX};
-            sqrt.setColor(color[0], color[1], color[2]);
-            sqrt.Move(sin, cos);
-            sqrt.rotate(0.1f);
-            sqrt.Display();
+            primVect[i]->Display();
+            //rotate sqrt but first cast it to square
+            ((Primitives::Rectanagle*)primVect[i])->rotate(0.01f);
         }
         glfwSwapBuffers(window);
     }

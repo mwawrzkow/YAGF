@@ -10,12 +10,14 @@ add_library(gl_Core
         core/base/Primitive.cpp 
         core/WindowProperties.cpp 
         core/primitives/Square.cpp 
+        core/primitives/Rectanagle.cpp 
+
         # core/primitives/PrimitivesManager.cpp
         # core/primitives/Lights.cpp
         # core/primitives/Light/DirectLight.cpp
         # core/primitives/Light/SphericalLight.cpp
         # core/primitives/Light/GlobalLight.cpp #TODO: add when starts working
-        # core/Line.cpp
+        core/primitives/Line.cpp
         core/OpenGLArrays/ArrayHandler.cpp 
         core/base/Texture.cpp
         core/base/OpenGLStart.cpp

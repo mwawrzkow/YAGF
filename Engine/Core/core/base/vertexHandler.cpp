@@ -8,8 +8,10 @@
 #include <chrono>
 #include <thread>
 #include "../WindowProperties.hpp"
-VertexHandler::VertexHandler(/* args */)
+VertexHandler::VertexHandler(bool isDefaultPrimitive)
 {
+    if(!isDefaultPrimitive)
+        return;
     Global::WindowProperties* WP = &Global::WindowProperties::getInstance(); 
     GPU::ArrayHandler* AH = WP->getAH(); 
     if (!AH->areFreeBuffers())
