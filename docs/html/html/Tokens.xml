@@ -36,12 +36,12 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>vertexHandler</Name>
+      <Name>VertexHandler</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
-      <Scope>vertexHandler</Scope>
+      <Scope>VertexHandler</Scope>
     </TokenIdentifier>
-    <Path>d9/d2b/classvertex_handler.html</Path>
+    <Path>d8/dd2/class_vertex_handler.html</Path>
   </Token>
   <Token>
     <TokenIdentifier>

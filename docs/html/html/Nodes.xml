@@ -1409,6 +1409,11 @@
               <Anchor>a6a28074fcede9f3e8474263ce210a823</Anchor>
              </Node>
              <Node>
+              <Name>operator=</Name>
+              <Path>d1/df5/class_primitive.html</Path>
+              <Anchor>ac458e69f8506f288245db036de35add5</Anchor>
+             </Node>
+             <Node>
               <Name>sin</Name>
               <Path>d1/df5/class_primitive.html</Path>
               <Anchor>a7e3dd693ff89e70c978fbb9be28e3405</Anchor>
@@ -1421,73 +1426,78 @@
             </Subnodes>
            </Node>
            <Node>
-            <Name>vertexHandler</Name>
-            <Path>d9/d2b/classvertex_handler.html</Path>
+            <Name>VertexHandler</Name>
+            <Path>d8/dd2/class_vertex_handler.html</Path>
             <Subnodes>
              <Node>
-              <Name>vertexHandler</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a4e3c8212a56b761b35ab3601485ec186</Anchor>
+              <Name>VertexHandler</Name>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a4008ba3c8ec042c0db3c677a3e37a3d6</Anchor>
              </Node>
              <Node>
-              <Name>vertexHandler</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a7af9098b1aba080a6db8f3cb7a6ec898</Anchor>
+              <Name>VertexHandler</Name>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>aff06c963333a3a6f4b203706af56c626</Anchor>
              </Node>
              <Node>
-              <Name>~vertexHandler</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>ad2b6773fa1c8fbf03b5053cfc56ec3e3</Anchor>
+              <Name>~VertexHandler</Name>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a0123d08fab405c64eee4043762b5ebb5</Anchor>
              </Node>
              <Node>
               <Name>getEBO</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a79f4a92ed4b588909578933d70438ef3</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a5455f7f83d49fc4c9d1f4420863e768f</Anchor>
              </Node>
              <Node>
               <Name>getTexture</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a9068829d1c391b1090d55c9558166527</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a60a28a3c16f3a99b2f15631f7c166668</Anchor>
              </Node>
              <Node>
               <Name>getVAO</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>aad21cf09c1949730a0c3201e51b576eb</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a0e0aae326cc998caad6c7f980dce1aa8</Anchor>
              </Node>
              <Node>
               <Name>getVBO</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a7de48055c9c0d1c8312ab4b8e1b506ee</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a56d3ecfa8195f3650ce9271c496a60e6</Anchor>
+             </Node>
+             <Node>
+              <Name>operator=</Name>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a9e81194b1095cf01b54ba75c7dc1226c</Anchor>
              </Node>
              <Node>
               <Name>setTextureData</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>ae53ada960769976fe82f4907d897ed59</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>ae2c567327ea6011754b9a71ea3138868</Anchor>
              </Node>
              <Node>
               <Name>setVertexHandler</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a67f444bb7b52a2c09a8375f4355a6281</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>ac57d9fb3be9b51905afe2e9d4e5ce0f6</Anchor>
              </Node>
              <Node>
               <Name>EBO</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a7b4edc935e802ff478d17acc3a88eb57</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a4575adfb2e95681b09cceb6eb62f94ed</Anchor>
              </Node>
              <Node>
               <Name>texture</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>a3fa799d56f9246fbc62d13c05ba0e636</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>aeb29e86ccdb3f85e022999ee77183f11</Anchor>
              </Node>
              <Node>
               <Name>VAO</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>ab76cc5b03e078f79f19646f566aab81a</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>a27c5da7dc9fcdb3d9ebffbc11c1d2840</Anchor>
              </Node>
              <Node>
               <Name>VBO</Name>
-              <Path>d9/d2b/classvertex_handler.html</Path>
-              <Anchor>afd1914da98b96a02261c6d36f918c5c7</Anchor>
+              <Path>d8/dd2/class_vertex_handler.html</Path>
+              <Anchor>acf5d1b6c50fc7181e8d15adab2f316eb</Anchor>
              </Node>
             </Subnodes>
            </Node>
@@ -1608,8 +1618,8 @@
             <Path>d5/db3/class_a_e_g_1_1_textures.html</Path>
            </Node>
            <Node>
-            <Name>vertexHandler</Name>
-            <Path>d9/d2b/classvertex_handler.html</Path>
+            <Name>VertexHandler</Name>
+            <Path>d8/dd2/class_vertex_handler.html</Path>
             <Subnodes>
              <Node>
               <Name>Primitive</Name>
