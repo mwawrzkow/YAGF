@@ -285,7 +285,7 @@
       <Scope>Primitives::Line</Scope>
     </TokenIdentifier>
     <Path>d2/df4/class_primitives_1_1_line.html</Path>
-    <Anchor>ae14bbf0a52650e40fd776a63a05b0cc1</Anchor>
+    <Anchor>a4c532e6f202efaf60b10c6752c5d775a</Anchor>
     <Abstract>Construct a new Line object.</Abstract>
     <DeclaredIn>Line.hpp</DeclaredIn>
   </Token>
@@ -297,7 +297,7 @@
       <Scope>Primitives::Line</Scope>
     </TokenIdentifier>
     <Path>d2/df4/class_primitives_1_1_line.html</Path>
-    <Anchor>a32382e6c140d3fd870e002838f855103</Anchor>
+    <Anchor>a582ab3a4c6c96a8a04ddb26034f656c3</Anchor>
     <Abstract>Display the Line.</Abstract>
     <DeclaredIn>Line.hpp</DeclaredIn>
   </Token>
@@ -312,150 +312,6 @@
     <Anchor>a66dac47f04a9bd85cdfadf89408d1b4c</Anchor>
     <Abstract>is the Line visible</Abstract>
     <DeclaredIn>Line.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setPosition</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a610d88954d4dccd6a28413650e1518b4</Anchor>
-    <Abstract>Set the Position object.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>Move</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a93e5e9d6dfab457515ea2efa3ea5d6f4</Anchor>
-    <Abstract>move the square relative to the current position</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setTexture</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>aa5987c3269ff1d0df07ccffcc6f1cbdf</Anchor>
-    <Abstract>Set the Texture object.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>isVisible</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>acd6f37dd5858031e0f1f752619e78a82</Anchor>
-    <Abstract>is Object on the screen</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>Display</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a642e76f32a20f98d44e34b264d3f18b3</Anchor>
-    <Abstract>Draw the square.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setAlpha</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a48e7991e2a5db9c16f49768a75c6ad5d</Anchor>
-    <Abstract>Set the Alpha value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>isNear</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>afd73439e21baa6d3f5a71886ed6ef001</Anchor>
-    <Abstract>is the Object int the radius</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setRotation</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a43ce7fbdedde834e38a56380fb826602</Anchor>
-    <Abstract>Set the rotation of the square.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>rotate</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a65daa33f3cc4db406cc35d55bd01ffa1</Anchor>
-    <Abstract>rotate the square relative to the current rotation</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setR</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a42e53f420e15b998d9faacff846e4e4e</Anchor>
-    <Abstract>Set R color value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setG</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>af03afda4acb1458e591b8ffe8731888a</Anchor>
-    <Abstract>Set G color value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
-      <Name>setColor</Name>
-      <APILanguage>cpp</APILanguage>
-      <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
-    </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a2772ca56d742bdbf12dfb5aa50837425</Anchor>
-    <Abstract>Set the Color value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
@@ -477,6 +333,195 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>Primitives::Rectanagle</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cl</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setWidth</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a5dde8f0f1f5f465aa241f493c4887aee</Anchor>
+    <Abstract>Set the Width value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setHeight</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aadd7538e83b69eb8095a6be10f7bb73c</Anchor>
+    <Abstract>Set the Height value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setPosition</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a815a4f31179e226810b233c1e07e06d6</Anchor>
+    <Abstract>Set the Position object.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Move</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a1836c639f50e6a40bf35ebb440f05230</Anchor>
+    <Abstract>move the square relative to the current position</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setTexture</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aea19f931e4b59973a88f1645f8cdc4a0</Anchor>
+    <Abstract>Set the Texture object.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>isVisible</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>ab245a180585f6ef511888fb4dfccecc1</Anchor>
+    <Abstract>is Object on the screen</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>Display</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a7f199630f22f6be64bed151de977ef8a</Anchor>
+    <Abstract>Draw the square.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setAlpha</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aa7b4570e7b054d05d902327075dcf4b8</Anchor>
+    <Abstract>Set the Alpha value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>isNear</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>acc3d88cb2560382a0b96cd491b361a04</Anchor>
+    <Abstract>is the Object int the radius</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setRotation</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>ab11cdd207c9edf9aafe05e67ef5eb9a3</Anchor>
+    <Abstract>Set the rotation of the square.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>rotate</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aca03cdc11a8d3518e73ec869bfd5c3c1</Anchor>
+    <Abstract>rotate the square relative to the current rotation</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setR</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a9b499f6bff629d65b5f9505552edc727</Anchor>
+    <Abstract>Set R color value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setG</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a569f2526f0a5b0c67b45de1f0e2d8bd5</Anchor>
+    <Abstract>Set G color value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setColor</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a9d68300bfbbc4d77050cf7e651f98331</Anchor>
+    <Abstract>Set the Color value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>rotateVertices</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a23c61b755b44f7c8f25b9e783c22bdea</Anchor>
+    <Abstract>Rotate the vertices of the square.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>Primitives::Square</Name>
       <APILanguage>c</APILanguage>
       <Type>cl</Type>
@@ -486,158 +531,182 @@
   </Token>
   <Token>
     <TokenIdentifier>
+      <Name>setWidth</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a5dde8f0f1f5f465aa241f493c4887aee</Anchor>
+    <Abstract>Set the Width value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>setHeight</Name>
+      <APILanguage>cpp</APILanguage>
+      <Type>instm</Type>
+      <Scope>Primitives::Rectanagle</Scope>
+    </TokenIdentifier>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aadd7538e83b69eb8095a6be10f7bb73c</Anchor>
+    <Abstract>Set the Height value.</Abstract>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
       <Name>setPosition</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a610d88954d4dccd6a28413650e1518b4</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a815a4f31179e226810b233c1e07e06d6</Anchor>
     <Abstract>Set the Position object.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>Move</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a93e5e9d6dfab457515ea2efa3ea5d6f4</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a1836c639f50e6a40bf35ebb440f05230</Anchor>
     <Abstract>move the square relative to the current position</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>setTexture</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>aa5987c3269ff1d0df07ccffcc6f1cbdf</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aea19f931e4b59973a88f1645f8cdc4a0</Anchor>
     <Abstract>Set the Texture object.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>isVisible</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>acd6f37dd5858031e0f1f752619e78a82</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>ab245a180585f6ef511888fb4dfccecc1</Anchor>
     <Abstract>is Object on the screen</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>Display</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a642e76f32a20f98d44e34b264d3f18b3</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a7f199630f22f6be64bed151de977ef8a</Anchor>
     <Abstract>Draw the square.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>setAlpha</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a48e7991e2a5db9c16f49768a75c6ad5d</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aa7b4570e7b054d05d902327075dcf4b8</Anchor>
     <Abstract>Set the Alpha value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>isNear</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>afd73439e21baa6d3f5a71886ed6ef001</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>acc3d88cb2560382a0b96cd491b361a04</Anchor>
     <Abstract>is the Object int the radius</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>setRotation</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a43ce7fbdedde834e38a56380fb826602</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>ab11cdd207c9edf9aafe05e67ef5eb9a3</Anchor>
     <Abstract>Set the rotation of the square.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>rotate</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a65daa33f3cc4db406cc35d55bd01ffa1</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>aca03cdc11a8d3518e73ec869bfd5c3c1</Anchor>
     <Abstract>rotate the square relative to the current rotation</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>setR</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a42e53f420e15b998d9faacff846e4e4e</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a9b499f6bff629d65b5f9505552edc727</Anchor>
     <Abstract>Set R color value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>setG</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>af03afda4acb1458e591b8ffe8731888a</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a569f2526f0a5b0c67b45de1f0e2d8bd5</Anchor>
     <Abstract>Set G color value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>setColor</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>a2772ca56d742bdbf12dfb5aa50837425</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a9d68300bfbbc4d77050cf7e651f98331</Anchor>
     <Abstract>Set the Color value.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
   <Token>
     <TokenIdentifier>
       <Name>rotateVertices</Name>
       <APILanguage>cpp</APILanguage>
       <Type>instm</Type>
-      <Scope>Primitives::Square</Scope>
+      <Scope>Primitives::Rectanagle</Scope>
     </TokenIdentifier>
-    <Path>de/ddd/class_primitives_1_1_square.html</Path>
-    <Anchor>ac3c0644e825c9419e4f474f9cb20c3af</Anchor>
+    <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+    <Anchor>a23c61b755b44f7c8f25b9e783c22bdea</Anchor>
     <Abstract>Rotate the vertices of the square.</Abstract>
-    <DeclaredIn>Square.hpp</DeclaredIn>
+    <DeclaredIn>Rectanagle.hpp</DeclaredIn>
   </Token>
 </Tokens>

@@ -76,9 +76,10 @@ Inheritance diagram for Primitive:</div>
  <div class="center">
   <img src="../../d1/df5/class_primitive.png" usemap="#Primitive_map" alt=""/>
   <map id="Primitive_map" name="Primitive_map">
-<area href="../../d8/dd2/class_vertex_handler.html" alt="VertexHandler" shape="rect" coords="0,0,112,24"/>
-<area href="../../de/ddd/class_primitives_1_1_square.html" alt="Primitives::Square" shape="rect" coords="0,112,112,136"/>
-<area href="../../d2/df4/class_primitives_1_1_line.html" alt="Primitives::Line" shape="rect" coords="0,168,112,192"/>
+<area href="../../d8/dd2/class_vertex_handler.html" alt="VertexHandler" shape="rect" coords="72,0,207,24"/>
+<area href="../../d2/df4/class_primitives_1_1_line.html" alt="Primitives::Line" shape="rect" coords="0,112,135,136"/>
+<area href="../../d9/d0b/class_primitives_1_1_rectanagle.html" alt="Primitives::Rectanagle" shape="rect" coords="145,112,280,136"/>
+<area href="../../de/ddd/class_primitives_1_1_square.html" alt="Primitives::Square" shape="rect" coords="145,168,280,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -87,6 +88,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d2bdccd23cd35795e39bca29c146819"><td class="memItemLeft" align="right" valign="top"><a id="a1d2bdccd23cd35795e39bca29c146819"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Primitive</b> (prim_type)</td></tr>
 <tr class="separator:a1d2bdccd23cd35795e39bca29c146819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d680120e46502969bac626408287cb"><td class="memItemLeft" align="right" valign="top"><a id="ac1d680120e46502969bac626408287cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Primitive</b> (prim_type type, bool isDefaultPrimitive)</td></tr>
+<tr class="separator:ac1d680120e46502969bac626408287cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68ff94694e9518ff778c1f28f0a3c47"><td class="memItemLeft" align="right" valign="top"><a id="ae68ff94694e9518ff778c1f28f0a3c47"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Primitive</b> (const <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a> &amp;p)</td></tr>
 <tr class="separator:ae68ff94694e9518ff778c1f28f0a3c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +103,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>sin</b> (float r)</t
 <tr class="memitem:aebd2b83af2b18eeef0f10453d250e116"><td class="memItemLeft" align="right" valign="top"><a id="aebd2b83af2b18eeef0f10453d250e116"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>cos</b> (float r)</td></tr>
 <tr class="separator:aebd2b83af2b18eeef0f10453d250e116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23dc419da861551636580e406b1d2c50"><td class="memItemLeft" align="right" valign="top"><a id="a23dc419da861551636580e406b1d2c50"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Display</b> ()=0</td></tr>
+<tr class="separator:a23dc419da861551636580e406b1d2c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a28074fcede9f3e8474263ce210a823"><td class="memItemLeft" align="right" valign="top"><a id="a6a28074fcede9f3e8474263ce210a823"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVisible</b> ()=0</td></tr>
 <tr class="separator:a6a28074fcede9f3e8474263ce210a823"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,6 +113,9 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isVisible</b>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNear</b> (float, float, float)=0</td></tr>
 <tr class="separator:a9366495495707fc1f9b2b61393c80b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_vertex_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_vertex_handler')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/dd2/class_vertex_handler.html">VertexHandler</a></td></tr>
+<tr class="memitem:aef1ab41421e48cd497c63eca6c1ba161 inherit pub_methods_class_vertex_handler"><td class="memItemLeft" align="right" valign="top"><a id="aef1ab41421e48cd497c63eca6c1ba161"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VertexHandler</b> (bool isDefaultPrimitive)</td></tr>
+<tr class="separator:aef1ab41421e48cd497c63eca6c1ba161 inherit pub_methods_class_vertex_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff06c963333a3a6f4b203706af56c626 inherit pub_methods_class_vertex_handler"><td class="memItemLeft" align="right" valign="top"><a id="aff06c963333a3a6f4b203706af56c626"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VertexHandler</b> (const <a class="el" href="../../d8/dd2/class_vertex_handler.html">VertexHandler</a> &amp;other)</td></tr>
 <tr class="separator:aff06c963333a3a6f4b203706af56c626 inherit pub_methods_class_vertex_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +145,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getVAO</b> ()</td></tr
 Protected Types</h2></td></tr>
 <tr class="memitem:a6ae9dacdf47c20300f8208680b17b3b4"><td class="memItemLeft" align="right" valign="top"><a id="a6ae9dacdf47c20300f8208680b17b3b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>prim_type</b> { <b>RECTANAGLE</b>, 
 <b>TRIANGLE</b>, 
-<b>SQUARE</b>
+<b>SQUARE</b>, 
+<b>LINE</b>
  }</td></tr>
 <tr class="separator:a6ae9dacdf47c20300f8208680b17b3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">

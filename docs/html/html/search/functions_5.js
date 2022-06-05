@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['move_77',['Move',['../de/ddd/class_primitives_1_1_square.html#a93e5e9d6dfab457515ea2efa3ea5d6f4',1,'Primitives::Square']]]
+  ['move_81',['Move',['../d9/d0b/class_primitives_1_1_rectanagle.html#a1836c639f50e6a40bf35ebb440f05230',1,'Primitives::Rectanagle']]]
 ];

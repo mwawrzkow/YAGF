@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['setalpha_81',['setAlpha',['../de/ddd/class_primitives_1_1_square.html#a48e7991e2a5db9c16f49768a75c6ad5d',1,'Primitives::Square']]],
-  ['setcolor_82',['setColor',['../de/ddd/class_primitives_1_1_square.html#a2772ca56d742bdbf12dfb5aa50837425',1,'Primitives::Square']]],
-  ['setg_83',['setG',['../de/ddd/class_primitives_1_1_square.html#af03afda4acb1458e591b8ffe8731888a',1,'Primitives::Square']]],
-  ['setposition_84',['setPosition',['../de/ddd/class_primitives_1_1_square.html#a610d88954d4dccd6a28413650e1518b4',1,'Primitives::Square']]],
-  ['setr_85',['setR',['../de/ddd/class_primitives_1_1_square.html#a42e53f420e15b998d9faacff846e4e4e',1,'Primitives::Square']]],
-  ['setrotation_86',['setRotation',['../de/ddd/class_primitives_1_1_square.html#a43ce7fbdedde834e38a56380fb826602',1,'Primitives::Square']]],
-  ['settexture_87',['setTexture',['../de/ddd/class_primitives_1_1_square.html#aa5987c3269ff1d0df07ccffcc6f1cbdf',1,'Primitives::Square']]]
+  ['setalpha_85',['setAlpha',['../d9/d0b/class_primitives_1_1_rectanagle.html#aa7b4570e7b054d05d902327075dcf4b8',1,'Primitives::Rectanagle']]],
+  ['setcolor_86',['setColor',['../d9/d0b/class_primitives_1_1_rectanagle.html#a9d68300bfbbc4d77050cf7e651f98331',1,'Primitives::Rectanagle']]],
+  ['setg_87',['setG',['../d9/d0b/class_primitives_1_1_rectanagle.html#a569f2526f0a5b0c67b45de1f0e2d8bd5',1,'Primitives::Rectanagle']]],
+  ['setheight_88',['setHeight',['../d9/d0b/class_primitives_1_1_rectanagle.html#aadd7538e83b69eb8095a6be10f7bb73c',1,'Primitives::Rectanagle']]],
+  ['setposition_89',['setPosition',['../d9/d0b/class_primitives_1_1_rectanagle.html#a815a4f31179e226810b233c1e07e06d6',1,'Primitives::Rectanagle']]],
+  ['setr_90',['setR',['../d9/d0b/class_primitives_1_1_rectanagle.html#a9b499f6bff629d65b5f9505552edc727',1,'Primitives::Rectanagle']]],
+  ['setrotation_91',['setRotation',['../d9/d0b/class_primitives_1_1_rectanagle.html#ab11cdd207c9edf9aafe05e67ef5eb9a3',1,'Primitives::Rectanagle']]],
+  ['settexture_92',['setTexture',['../d9/d0b/class_primitives_1_1_rectanagle.html#aea19f931e4b59973a88f1645f8cdc4a0',1,'Primitives::Rectanagle']]],
+  ['setwidth_93',['setWidth',['../d9/d0b/class_primitives_1_1_rectanagle.html#a5dde8f0f1f5f465aa241f493c4887aee',1,'Primitives::Rectanagle']]]
 ];

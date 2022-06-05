@@ -1056,17 +1056,37 @@
                <Node>
                 <Name>Line</Name>
                 <Path>d2/df4/class_primitives_1_1_line.html</Path>
-                <Anchor>ae14bbf0a52650e40fd776a63a05b0cc1</Anchor>
+                <Anchor>a4c532e6f202efaf60b10c6752c5d775a</Anchor>
+               </Node>
+               <Node>
+                <Name>Line</Name>
+                <Path>d2/df4/class_primitives_1_1_line.html</Path>
+                <Anchor>a5b3c9101148a3357f7953ada8be04199</Anchor>
                </Node>
                <Node>
                 <Name>Display</Name>
                 <Path>d2/df4/class_primitives_1_1_line.html</Path>
-                <Anchor>a32382e6c140d3fd870e002838f855103</Anchor>
+                <Anchor>a582ab3a4c6c96a8a04ddb26034f656c3</Anchor>
+               </Node>
+               <Node>
+                <Name>isNear</Name>
+                <Path>d2/df4/class_primitives_1_1_line.html</Path>
+                <Anchor>ae8f5f92a1ac4340de20c1c39bf7bdf67</Anchor>
                </Node>
                <Node>
                 <Name>isVisible</Name>
                 <Path>d2/df4/class_primitives_1_1_line.html</Path>
                 <Anchor>a66dac47f04a9bd85cdfadf89408d1b4c</Anchor>
+               </Node>
+               <Node>
+                <Name>operator=</Name>
+                <Path>d2/df4/class_primitives_1_1_line.html</Path>
+                <Anchor>ac9a77d1edb8c913f0e89636d8e63ba44</Anchor>
+               </Node>
+               <Node>
+                <Name>squares</Name>
+                <Path>d2/df4/class_primitives_1_1_line.html</Path>
+                <Anchor>acea662c7f5d346a03f3618fb0abccfdc</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1143,19 +1163,200 @@
               </Subnodes>
              </Node>
              <Node>
-              <Name>Square</Name>
-              <Path>de/ddd/class_primitives_1_1_square.html</Path>
+              <Name>Rectanagle</Name>
+              <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
               <Subnodes>
                <Node>
                 <Name>colors_array</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a7c9884b4522394d24bcaee6a9fdafa23</Anchor>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a7e8ef6f2d7c120492a717bcfc98796bf</Anchor>
                </Node>
                <Node>
                 <Name>verticies_array</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a4fc4643a99df8e88bd252537293781f2</Anchor>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>ad97a8089920ce5caf52bad6f1baffa2d</Anchor>
                </Node>
+               <Node>
+                <Name>Rectanagle</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>ad88ffdf82ddd5497f8557385892eff0f</Anchor>
+               </Node>
+               <Node>
+                <Name>Rectanagle</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>affdf266c5f28420a13212ae239d6ffa4</Anchor>
+               </Node>
+               <Node>
+                <Name>~Rectanagle</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>ade7512e12cab1544eb7b8b862458ce7d</Anchor>
+               </Node>
+               <Node>
+                <Name>calculateMatrixes</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a2dfa1ba311f43d6b09fd6aa33dc77403</Anchor>
+               </Node>
+               <Node>
+                <Name>calculateVerticesArr</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a4bab9b8a247a313e5f7c9488362d0509</Anchor>
+               </Node>
+               <Node>
+                <Name>Display</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a7f199630f22f6be64bed151de977ef8a</Anchor>
+               </Node>
+               <Node>
+                <Name>getRotation</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a62d0f4891f649ad37476c53b7e371cdc</Anchor>
+               </Node>
+               <Node>
+                <Name>getX</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a3391df5d2113f09f4340011fe9f919ca</Anchor>
+               </Node>
+               <Node>
+                <Name>getY</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>af56412f5a6d9f945eaa0250d558d7636</Anchor>
+               </Node>
+               <Node>
+                <Name>isNear</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>acc3d88cb2560382a0b96cd491b361a04</Anchor>
+               </Node>
+               <Node>
+                <Name>isVisible</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>ab245a180585f6ef511888fb4dfccecc1</Anchor>
+               </Node>
+               <Node>
+                <Name>Move</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a1836c639f50e6a40bf35ebb440f05230</Anchor>
+               </Node>
+               <Node>
+                <Name>operator=</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>ae5b99ba80f47857d6cafa58c9d6cf503</Anchor>
+               </Node>
+               <Node>
+                <Name>rotate</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>aca03cdc11a8d3518e73ec869bfd5c3c1</Anchor>
+               </Node>
+               <Node>
+                <Name>rotateVertices</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a23c61b755b44f7c8f25b9e783c22bdea</Anchor>
+               </Node>
+               <Node>
+                <Name>setAlpha</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>aa7b4570e7b054d05d902327075dcf4b8</Anchor>
+               </Node>
+               <Node>
+                <Name>setB</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>af3cddb48611ffce2036eb4aa8bdf0e14</Anchor>
+               </Node>
+               <Node>
+                <Name>setColor</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a9d68300bfbbc4d77050cf7e651f98331</Anchor>
+               </Node>
+               <Node>
+                <Name>setG</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a569f2526f0a5b0c67b45de1f0e2d8bd5</Anchor>
+               </Node>
+               <Node>
+                <Name>setHeight</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>aadd7538e83b69eb8095a6be10f7bb73c</Anchor>
+               </Node>
+               <Node>
+                <Name>setPosition</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a815a4f31179e226810b233c1e07e06d6</Anchor>
+               </Node>
+               <Node>
+                <Name>setR</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a9b499f6bff629d65b5f9505552edc727</Anchor>
+               </Node>
+               <Node>
+                <Name>setRotation</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>ab11cdd207c9edf9aafe05e67ef5eb9a3</Anchor>
+               </Node>
+               <Node>
+                <Name>setTexture</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>aea19f931e4b59973a88f1645f8cdc4a0</Anchor>
+               </Node>
+               <Node>
+                <Name>SetVerticeColor</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a0fad3a27d727ac9ca062714d6630575b</Anchor>
+               </Node>
+               <Node>
+                <Name>setWidth</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a5dde8f0f1f5f465aa241f493c4887aee</Anchor>
+               </Node>
+               <Node>
+                <Name>angle</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a33879c8bef8a16c6045750201077955b</Anchor>
+               </Node>
+               <Node>
+                <Name>color_arr</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a336263bda4ec8fde3148770c4552ee6b</Anchor>
+               </Node>
+               <Node>
+                <Name>height</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a65c8085e9d4011fa85938b2fe596a2df</Anchor>
+               </Node>
+               <Node>
+                <Name>inc</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>aa6e5ba02469211c37d0a66d50d5c6e02</Anchor>
+               </Node>
+               <Node>
+                <Name>verticies_arr</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>afda444536b47e753e2d9ebf9c780f44f</Anchor>
+               </Node>
+               <Node>
+                <Name>width</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>ac5489400dd214e3eefd477b2fc6b157e</Anchor>
+               </Node>
+               <Node>
+                <Name>window</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a20c22ed5bae27b8b53f5814948bf3674</Anchor>
+               </Node>
+               <Node>
+                <Name>x</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a585b5a7b7c5dfffd925750a336d2d3a1</Anchor>
+               </Node>
+               <Node>
+                <Name>y</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
+                <Anchor>a844af763d2c38a5d4f9c5bf1dda1bcee</Anchor>
+               </Node>
+              </Subnodes>
+             </Node>
+             <Node>
+              <Name>Square</Name>
+              <Path>de/ddd/class_primitives_1_1_square.html</Path>
+              <Subnodes>
                <Node>
                 <Name>Square</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
@@ -1172,149 +1373,14 @@
                 <Anchor>a5411f9750577cf766e68027c3d1a144d</Anchor>
                </Node>
                <Node>
-                <Name>calculateMatrixes</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a4b2763cae1acd6f11ec342116efd151b</Anchor>
-               </Node>
-               <Node>
-                <Name>calculateVerticesArr</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>ad75790a494a8868ca35a2aa5db463003</Anchor>
-               </Node>
-               <Node>
-                <Name>Display</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a642e76f32a20f98d44e34b264d3f18b3</Anchor>
-               </Node>
-               <Node>
-                <Name>getRotation</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a776fab4848f8688a7be6594aeee1c48b</Anchor>
-               </Node>
-               <Node>
-                <Name>getX</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>aba3f639c34943167e5ef3956b49fe95c</Anchor>
-               </Node>
-               <Node>
-                <Name>getY</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a61a449fbda691440e8eb65a7af872f43</Anchor>
-               </Node>
-               <Node>
-                <Name>isNear</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>afd73439e21baa6d3f5a71886ed6ef001</Anchor>
-               </Node>
-               <Node>
-                <Name>isVisible</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>acd6f37dd5858031e0f1f752619e78a82</Anchor>
-               </Node>
-               <Node>
-                <Name>Move</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a93e5e9d6dfab457515ea2efa3ea5d6f4</Anchor>
-               </Node>
-               <Node>
                 <Name>operator=</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a6cd731ab147258b82194802c26734349</Anchor>
                </Node>
                <Node>
-                <Name>rotate</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a65daa33f3cc4db406cc35d55bd01ffa1</Anchor>
-               </Node>
-               <Node>
-                <Name>rotateVertices</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>ac3c0644e825c9419e4f474f9cb20c3af</Anchor>
-               </Node>
-               <Node>
-                <Name>setAlpha</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a48e7991e2a5db9c16f49768a75c6ad5d</Anchor>
-               </Node>
-               <Node>
-                <Name>setB</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a5594b4ae7ce904635335d5737482a775</Anchor>
-               </Node>
-               <Node>
-                <Name>setColor</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a2772ca56d742bdbf12dfb5aa50837425</Anchor>
-               </Node>
-               <Node>
-                <Name>setG</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>af03afda4acb1458e591b8ffe8731888a</Anchor>
-               </Node>
-               <Node>
-                <Name>setPosition</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a610d88954d4dccd6a28413650e1518b4</Anchor>
-               </Node>
-               <Node>
-                <Name>setR</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a42e53f420e15b998d9faacff846e4e4e</Anchor>
-               </Node>
-               <Node>
-                <Name>setRotation</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a43ce7fbdedde834e38a56380fb826602</Anchor>
-               </Node>
-               <Node>
-                <Name>setTexture</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>aa5987c3269ff1d0df07ccffcc6f1cbdf</Anchor>
-               </Node>
-               <Node>
-                <Name>SetVerticeColor</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a6e5a99a500804302502e34055251db5b</Anchor>
-               </Node>
-               <Node>
-                <Name>angle</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a70b1a13abd57f769754e1020f4ca24e2</Anchor>
-               </Node>
-               <Node>
-                <Name>color_arr</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a53c39873f86fc5c7b20c40c065205bc3</Anchor>
-               </Node>
-               <Node>
-                <Name>inc</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a0a0341207874b4c35b11e40f33961371</Anchor>
-               </Node>
-               <Node>
                 <Name>size</Name>
                 <Path>de/ddd/class_primitives_1_1_square.html</Path>
                 <Anchor>a4204b6201cd093d66b54178abb7ec2a4</Anchor>
-               </Node>
-               <Node>
-                <Name>verticies_arr</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a65eee5c5c3a81c826806f3d11812c338</Anchor>
-               </Node>
-               <Node>
-                <Name>window</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a3a2277e05b312b4e7d1dac9d823e0f24</Anchor>
-               </Node>
-               <Node>
-                <Name>x</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>a6e677d70e242e71d9a5bf68d7da13117</Anchor>
-               </Node>
-               <Node>
-                <Name>y</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
-                <Anchor>ac855956f8f7c13ba4d2edea15e1bc5b1</Anchor>
                </Node>
               </Subnodes>
              </Node>
@@ -1376,12 +1442,22 @@
                 <Path>d1/df5/class_primitive.html</Path>
                 <Anchor>a6ae9dacdf47c20300f8208680b17b3b4a5ee4e83450f6a384315338a025bdcedc</Anchor>
                </Node>
+               <Node>
+                <Name>LINE</Name>
+                <Path>d1/df5/class_primitive.html</Path>
+                <Anchor>a6ae9dacdf47c20300f8208680b17b3b4ab046bcd6b5d3c16ab63b652255039323</Anchor>
+               </Node>
               </Subnodes>
              </Node>
              <Node>
               <Name>Primitive</Name>
               <Path>d1/df5/class_primitive.html</Path>
               <Anchor>a1d2bdccd23cd35795e39bca29c146819</Anchor>
+             </Node>
+             <Node>
+              <Name>Primitive</Name>
+              <Path>d1/df5/class_primitive.html</Path>
+              <Anchor>ac1d680120e46502969bac626408287cb</Anchor>
              </Node>
              <Node>
               <Name>Primitive</Name>
@@ -1397,6 +1473,11 @@
               <Name>cos</Name>
               <Path>d1/df5/class_primitive.html</Path>
               <Anchor>aebd2b83af2b18eeef0f10453d250e116</Anchor>
+             </Node>
+             <Node>
+              <Name>Display</Name>
+              <Path>d1/df5/class_primitive.html</Path>
+              <Anchor>a23dc419da861551636580e406b1d2c50</Anchor>
              </Node>
              <Node>
               <Name>isNear</Name>
@@ -1432,7 +1513,7 @@
              <Node>
               <Name>VertexHandler</Name>
               <Path>d8/dd2/class_vertex_handler.html</Path>
-              <Anchor>a4008ba3c8ec042c0db3c677a3e37a3d6</Anchor>
+              <Anchor>aef1ab41421e48cd497c63eca6c1ba161</Anchor>
              </Node>
              <Node>
               <Name>VertexHandler</Name>
@@ -1626,12 +1707,16 @@
               <Path>d1/df5/class_primitive.html</Path>
               <Subnodes>
                <Node>
-                <Name>Primitives::Square</Name>
-                <Path>de/ddd/class_primitives_1_1_square.html</Path>
+                <Name>Primitives::Line</Name>
+                <Path>d2/df4/class_primitives_1_1_line.html</Path>
+               </Node>
+               <Node>
+                <Name>Primitives::Rectanagle</Name>
+                <Path>d9/d0b/class_primitives_1_1_rectanagle.html</Path>
                 <Subnodes>
                  <Node>
-                  <Name>Primitives::Line</Name>
-                  <Path>d2/df4/class_primitives_1_1_line.html</Path>
+                  <Name>Primitives::Square</Name>
+                  <Path>de/ddd/class_primitives_1_1_square.html</Path>
                  </Node>
                 </Subnodes>
                </Node>
@@ -1750,6 +1835,10 @@
                    <Node>
                     <Name>PrimitivesManager.hpp</Name>
                     <Path>df/dae/_primitives_manager_8hpp_source.html</Path>
+                   </Node>
+                   <Node>
+                    <Name>Rectanagle.hpp</Name>
+                    <Path>db/ddf/_rectanagle_8hpp_source.html</Path>
                    </Node>
                    <Node>
                     <Name>Square.hpp</Name>

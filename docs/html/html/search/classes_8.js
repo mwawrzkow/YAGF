@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['sphericallight_61',['SphericalLight',['../da/db3/class_lights_1_1_spherical_light.html',1,'Lights']]],
-  ['square_62',['Square',['../de/ddd/class_primitives_1_1_square.html',1,'Primitives']]],
-  ['subject_63',['Subject',['../db/d74/class_o_s_d_l_1_1_subject.html',1,'OSDL']]]
+  ['rectanagle_64',['Rectanagle',['../d9/d0b/class_primitives_1_1_rectanagle.html',1,'Primitives']]]
 ];

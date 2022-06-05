@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isnear_74',['isNear',['../de/ddd/class_primitives_1_1_square.html#afd73439e21baa6d3f5a71886ed6ef001',1,'Primitives::Square']]],
-  ['isvisible_75',['isVisible',['../d2/df4/class_primitives_1_1_line.html#a66dac47f04a9bd85cdfadf89408d1b4c',1,'Primitives::Line::isVisible()'],['../de/ddd/class_primitives_1_1_square.html#acd6f37dd5858031e0f1f752619e78a82',1,'Primitives::Square::isVisible()']]]
+  ['isnear_78',['isNear',['../d9/d0b/class_primitives_1_1_rectanagle.html#acc3d88cb2560382a0b96cd491b361a04',1,'Primitives::Rectanagle']]],
+  ['isvisible_79',['isVisible',['../d2/df4/class_primitives_1_1_line.html#a66dac47f04a9bd85cdfadf89408d1b4c',1,'Primitives::Line::isVisible()'],['../d9/d0b/class_primitives_1_1_rectanagle.html#ab245a180585f6ef511888fb4dfccecc1',1,'Primitives::Rectanagle::isVisible()']]]
 ];

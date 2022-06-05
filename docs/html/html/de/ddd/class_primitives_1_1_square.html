@@ -67,8 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d7/d62/class_primitives_1_1_square-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -81,8 +79,9 @@ Inheritance diagram for Primitives::Square:</div>
  <div class="center">
   <img src="../../de/ddd/class_primitives_1_1_square.png" usemap="#Primitives::Square_map" alt=""/>
   <map id="Primitives::Square_map" name="Primitives::Square_map">
-<area href="../../d1/df5/class_primitive.html" alt="Primitive" shape="rect" coords="0,0,112,24"/>
-<area href="../../d2/df4/class_primitives_1_1_line.html" alt="Primitives::Line" shape="rect" coords="0,112,112,136"/>
+<area href="../../d9/d0b/class_primitives_1_1_rectanagle.html" alt="Primitives::Rectanagle" shape="rect" coords="0,112,135,136"/>
+<area href="../../d1/df5/class_primitive.html" alt="Primitive" shape="rect" coords="0,56,135,80"/>
+<area href="../../d8/dd2/class_vertex_handler.html" alt="VertexHandler" shape="rect" coords="0,0,135,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -97,89 +96,81 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cd731ab147258b82194802c26734349"><td class="memItemLeft" align="right" valign="top"><a id="a6cd731ab147258b82194802c26734349"></a>
 <a class="el" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;s)</td></tr>
 <tr class="separator:a6cd731ab147258b82194802c26734349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610d88954d4dccd6a28413650e1518b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a610d88954d4dccd6a28413650e1518b4">setPosition</a> (float, float)</td></tr>
-<tr class="memdesc:a610d88954d4dccd6a28413650e1518b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Position object.  <a href="../../de/ddd/class_primitives_1_1_square.html#a610d88954d4dccd6a28413650e1518b4">More...</a><br /></td></tr>
-<tr class="separator:a610d88954d4dccd6a28413650e1518b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93e5e9d6dfab457515ea2efa3ea5d6f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a93e5e9d6dfab457515ea2efa3ea5d6f4">Move</a> (float, float)</td></tr>
-<tr class="memdesc:a93e5e9d6dfab457515ea2efa3ea5d6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the square relative to the current position  <a href="../../de/ddd/class_primitives_1_1_square.html#a93e5e9d6dfab457515ea2efa3ea5d6f4">More...</a><br /></td></tr>
-<tr class="separator:a93e5e9d6dfab457515ea2efa3ea5d6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5987c3269ff1d0df07ccffcc6f1cbdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#aa5987c3269ff1d0df07ccffcc6f1cbdf">setTexture</a> (std::string)</td></tr>
-<tr class="memdesc:aa5987c3269ff1d0df07ccffcc6f1cbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Texture object.  <a href="../../de/ddd/class_primitives_1_1_square.html#aa5987c3269ff1d0df07ccffcc6f1cbdf">More...</a><br /></td></tr>
-<tr class="separator:aa5987c3269ff1d0df07ccffcc6f1cbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6f37dd5858031e0f1f752619e78a82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#acd6f37dd5858031e0f1f752619e78a82">isVisible</a> () override</td></tr>
-<tr class="memdesc:acd6f37dd5858031e0f1f752619e78a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">is Object on the screen  <a href="../../de/ddd/class_primitives_1_1_square.html#acd6f37dd5858031e0f1f752619e78a82">More...</a><br /></td></tr>
-<tr class="separator:acd6f37dd5858031e0f1f752619e78a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642e76f32a20f98d44e34b264d3f18b3"><td class="memItemLeft" align="right" valign="top"><a id="a642e76f32a20f98d44e34b264d3f18b3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a642e76f32a20f98d44e34b264d3f18b3">Display</a> ()</td></tr>
-<tr class="memdesc:a642e76f32a20f98d44e34b264d3f18b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the square. <br /></td></tr>
-<tr class="separator:a642e76f32a20f98d44e34b264d3f18b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba3f639c34943167e5ef3956b49fe95c"><td class="memItemLeft" align="right" valign="top"><a id="aba3f639c34943167e5ef3956b49fe95c"></a>
+<tr class="inherit_header pub_methods_class_primitives_1_1_rectanagle"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_primitives_1_1_rectanagle')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Primitives::Rectanagle</a></td></tr>
+<tr class="memitem:ad88ffdf82ddd5497f8557385892eff0f inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="ad88ffdf82ddd5497f8557385892eff0f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Rectanagle</b> (float, float, float, float, float=1.0f)</td></tr>
+<tr class="separator:ad88ffdf82ddd5497f8557385892eff0f inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affdf266c5f28420a13212ae239d6ffa4 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="affdf266c5f28420a13212ae239d6ffa4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Rectanagle</b> (const <a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Rectanagle</a> &amp;s)</td></tr>
+<tr class="separator:affdf266c5f28420a13212ae239d6ffa4 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b99ba80f47857d6cafa58c9d6cf503 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="ae5b99ba80f47857d6cafa58c9d6cf503"></a>
+<a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Rectanagle</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Rectanagle</a> &amp;s)</td></tr>
+<tr class="separator:ae5b99ba80f47857d6cafa58c9d6cf503 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dde8f0f1f5f465aa241f493c4887aee inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a5dde8f0f1f5f465aa241f493c4887aee">setWidth</a> (float)</td></tr>
+<tr class="memdesc:a5dde8f0f1f5f465aa241f493c4887aee inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Width value.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a5dde8f0f1f5f465aa241f493c4887aee">More...</a><br /></td></tr>
+<tr class="separator:a5dde8f0f1f5f465aa241f493c4887aee inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd7538e83b69eb8095a6be10f7bb73c inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aadd7538e83b69eb8095a6be10f7bb73c">setHeight</a> (float)</td></tr>
+<tr class="memdesc:aadd7538e83b69eb8095a6be10f7bb73c inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Height value.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aadd7538e83b69eb8095a6be10f7bb73c">More...</a><br /></td></tr>
+<tr class="separator:aadd7538e83b69eb8095a6be10f7bb73c inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815a4f31179e226810b233c1e07e06d6 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a815a4f31179e226810b233c1e07e06d6">setPosition</a> (float, float)</td></tr>
+<tr class="memdesc:a815a4f31179e226810b233c1e07e06d6 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Position object.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a815a4f31179e226810b233c1e07e06d6">More...</a><br /></td></tr>
+<tr class="separator:a815a4f31179e226810b233c1e07e06d6 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1836c639f50e6a40bf35ebb440f05230 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a1836c639f50e6a40bf35ebb440f05230">Move</a> (float, float)</td></tr>
+<tr class="memdesc:a1836c639f50e6a40bf35ebb440f05230 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">move the square relative to the current position  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a1836c639f50e6a40bf35ebb440f05230">More...</a><br /></td></tr>
+<tr class="separator:a1836c639f50e6a40bf35ebb440f05230 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea19f931e4b59973a88f1645f8cdc4a0 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aea19f931e4b59973a88f1645f8cdc4a0">setTexture</a> (std::string)</td></tr>
+<tr class="memdesc:aea19f931e4b59973a88f1645f8cdc4a0 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Texture object.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aea19f931e4b59973a88f1645f8cdc4a0">More...</a><br /></td></tr>
+<tr class="separator:aea19f931e4b59973a88f1645f8cdc4a0 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab245a180585f6ef511888fb4dfccecc1 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#ab245a180585f6ef511888fb4dfccecc1">isVisible</a> () override</td></tr>
+<tr class="memdesc:ab245a180585f6ef511888fb4dfccecc1 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">is Object on the screen  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#ab245a180585f6ef511888fb4dfccecc1">More...</a><br /></td></tr>
+<tr class="separator:ab245a180585f6ef511888fb4dfccecc1 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f199630f22f6be64bed151de977ef8a inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a7f199630f22f6be64bed151de977ef8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a7f199630f22f6be64bed151de977ef8a">Display</a> () override</td></tr>
+<tr class="memdesc:a7f199630f22f6be64bed151de977ef8a inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the square. <br /></td></tr>
+<tr class="separator:a7f199630f22f6be64bed151de977ef8a inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3391df5d2113f09f4340011fe9f919ca inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a3391df5d2113f09f4340011fe9f919ca"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getX</b> ()</td></tr>
-<tr class="separator:aba3f639c34943167e5ef3956b49fe95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a449fbda691440e8eb65a7af872f43"><td class="memItemLeft" align="right" valign="top"><a id="a61a449fbda691440e8eb65a7af872f43"></a>
+<tr class="separator:a3391df5d2113f09f4340011fe9f919ca inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56412f5a6d9f945eaa0250d558d7636 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="af56412f5a6d9f945eaa0250d558d7636"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getY</b> ()</td></tr>
-<tr class="separator:a61a449fbda691440e8eb65a7af872f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48e7991e2a5db9c16f49768a75c6ad5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a48e7991e2a5db9c16f49768a75c6ad5d">setAlpha</a> (float)</td></tr>
-<tr class="memdesc:a48e7991e2a5db9c16f49768a75c6ad5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Alpha value.  <a href="../../de/ddd/class_primitives_1_1_square.html#a48e7991e2a5db9c16f49768a75c6ad5d">More...</a><br /></td></tr>
-<tr class="separator:a48e7991e2a5db9c16f49768a75c6ad5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd73439e21baa6d3f5a71886ed6ef001"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#afd73439e21baa6d3f5a71886ed6ef001">isNear</a> (float, float, float) override</td></tr>
-<tr class="memdesc:afd73439e21baa6d3f5a71886ed6ef001"><td class="mdescLeft">&#160;</td><td class="mdescRight">is the Object int the radius  <a href="../../de/ddd/class_primitives_1_1_square.html#afd73439e21baa6d3f5a71886ed6ef001">More...</a><br /></td></tr>
-<tr class="separator:afd73439e21baa6d3f5a71886ed6ef001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43ce7fbdedde834e38a56380fb826602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a43ce7fbdedde834e38a56380fb826602">setRotation</a> (float)</td></tr>
-<tr class="memdesc:a43ce7fbdedde834e38a56380fb826602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the rotation of the square.  <a href="../../de/ddd/class_primitives_1_1_square.html#a43ce7fbdedde834e38a56380fb826602">More...</a><br /></td></tr>
-<tr class="separator:a43ce7fbdedde834e38a56380fb826602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776fab4848f8688a7be6594aeee1c48b"><td class="memItemLeft" align="right" valign="top"><a id="a776fab4848f8688a7be6594aeee1c48b"></a>
+<tr class="separator:af56412f5a6d9f945eaa0250d558d7636 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b4570e7b054d05d902327075dcf4b8 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aa7b4570e7b054d05d902327075dcf4b8">setAlpha</a> (float)</td></tr>
+<tr class="memdesc:aa7b4570e7b054d05d902327075dcf4b8 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Alpha value.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aa7b4570e7b054d05d902327075dcf4b8">More...</a><br /></td></tr>
+<tr class="separator:aa7b4570e7b054d05d902327075dcf4b8 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc3d88cb2560382a0b96cd491b361a04 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#acc3d88cb2560382a0b96cd491b361a04">isNear</a> (float, float, float) override</td></tr>
+<tr class="memdesc:acc3d88cb2560382a0b96cd491b361a04 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">is the Object int the radius  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#acc3d88cb2560382a0b96cd491b361a04">More...</a><br /></td></tr>
+<tr class="separator:acc3d88cb2560382a0b96cd491b361a04 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11cdd207c9edf9aafe05e67ef5eb9a3 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#ab11cdd207c9edf9aafe05e67ef5eb9a3">setRotation</a> (float)</td></tr>
+<tr class="memdesc:ab11cdd207c9edf9aafe05e67ef5eb9a3 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the rotation of the square.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#ab11cdd207c9edf9aafe05e67ef5eb9a3">More...</a><br /></td></tr>
+<tr class="separator:ab11cdd207c9edf9aafe05e67ef5eb9a3 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d0f4891f649ad37476c53b7e371cdc inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a62d0f4891f649ad37476c53b7e371cdc"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getRotation</b> ()</td></tr>
-<tr class="separator:a776fab4848f8688a7be6594aeee1c48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65daa33f3cc4db406cc35d55bd01ffa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a65daa33f3cc4db406cc35d55bd01ffa1">rotate</a> (float)</td></tr>
-<tr class="memdesc:a65daa33f3cc4db406cc35d55bd01ffa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate the square relative to the current rotation  <a href="../../de/ddd/class_primitives_1_1_square.html#a65daa33f3cc4db406cc35d55bd01ffa1">More...</a><br /></td></tr>
-<tr class="separator:a65daa33f3cc4db406cc35d55bd01ffa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e53f420e15b998d9faacff846e4e4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a42e53f420e15b998d9faacff846e4e4e">setR</a> (float)</td></tr>
-<tr class="memdesc:a42e53f420e15b998d9faacff846e4e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set R color value.  <a href="../../de/ddd/class_primitives_1_1_square.html#a42e53f420e15b998d9faacff846e4e4e">More...</a><br /></td></tr>
-<tr class="separator:a42e53f420e15b998d9faacff846e4e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03afda4acb1458e591b8ffe8731888a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#af03afda4acb1458e591b8ffe8731888a">setG</a> (float)</td></tr>
-<tr class="memdesc:af03afda4acb1458e591b8ffe8731888a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set G color value.  <a href="../../de/ddd/class_primitives_1_1_square.html#af03afda4acb1458e591b8ffe8731888a">More...</a><br /></td></tr>
-<tr class="separator:af03afda4acb1458e591b8ffe8731888a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5594b4ae7ce904635335d5737482a775"><td class="memItemLeft" align="right" valign="top"><a id="a5594b4ae7ce904635335d5737482a775"></a>
+<tr class="separator:a62d0f4891f649ad37476c53b7e371cdc inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca03cdc11a8d3518e73ec869bfd5c3c1 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aca03cdc11a8d3518e73ec869bfd5c3c1">rotate</a> (float)</td></tr>
+<tr class="memdesc:aca03cdc11a8d3518e73ec869bfd5c3c1 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate the square relative to the current rotation  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#aca03cdc11a8d3518e73ec869bfd5c3c1">More...</a><br /></td></tr>
+<tr class="separator:aca03cdc11a8d3518e73ec869bfd5c3c1 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b499f6bff629d65b5f9505552edc727 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a9b499f6bff629d65b5f9505552edc727">setR</a> (float)</td></tr>
+<tr class="memdesc:a9b499f6bff629d65b5f9505552edc727 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set R color value.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a9b499f6bff629d65b5f9505552edc727">More...</a><br /></td></tr>
+<tr class="separator:a9b499f6bff629d65b5f9505552edc727 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569f2526f0a5b0c67b45de1f0e2d8bd5 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a569f2526f0a5b0c67b45de1f0e2d8bd5">setG</a> (float)</td></tr>
+<tr class="memdesc:a569f2526f0a5b0c67b45de1f0e2d8bd5 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set G color value.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a569f2526f0a5b0c67b45de1f0e2d8bd5">More...</a><br /></td></tr>
+<tr class="separator:a569f2526f0a5b0c67b45de1f0e2d8bd5 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cddb48611ffce2036eb4aa8bdf0e14 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="af3cddb48611ffce2036eb4aa8bdf0e14"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setB</b> (float)</td></tr>
-<tr class="separator:a5594b4ae7ce904635335d5737482a775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2772ca56d742bdbf12dfb5aa50837425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#a2772ca56d742bdbf12dfb5aa50837425">setColor</a> (float, float, float, float=1.0f)</td></tr>
-<tr class="memdesc:a2772ca56d742bdbf12dfb5aa50837425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="../../d1/d5f/struct_primitives_1_1_color.html">Color</a> value.  <a href="../../de/ddd/class_primitives_1_1_square.html#a2772ca56d742bdbf12dfb5aa50837425">More...</a><br /></td></tr>
-<tr class="separator:a2772ca56d742bdbf12dfb5aa50837425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5a99a500804302502e34055251db5b"><td class="memItemLeft" align="right" valign="top"><a id="a6e5a99a500804302502e34055251db5b"></a>
+<tr class="separator:af3cddb48611ffce2036eb4aa8bdf0e14 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d68300bfbbc4d77050cf7e651f98331 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a9d68300bfbbc4d77050cf7e651f98331">setColor</a> (float, float, float, float=1.0f)</td></tr>
+<tr class="memdesc:a9d68300bfbbc4d77050cf7e651f98331 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="../../d1/d5f/struct_primitives_1_1_color.html">Color</a> value.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a9d68300bfbbc4d77050cf7e651f98331">More...</a><br /></td></tr>
+<tr class="separator:a9d68300bfbbc4d77050cf7e651f98331 inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fad3a27d727ac9ca062714d6630575b inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a0fad3a27d727ac9ca062714d6630575b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVerticeColor</b> (int, float, ColorType=ERROR)</td></tr>
-<tr class="separator:a6e5a99a500804302502e34055251db5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a4fc4643a99df8e88bd252537293781f2"><td class="memItemLeft" align="right" valign="top"><a id="a4fc4643a99df8e88bd252537293781f2"></a>
-typedef std::array&lt; <a class="el" href="../../dc/d51/struct_primitives_1_1_point2_d.html">PointF</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>verticies_array</b></td></tr>
-<tr class="separator:a4fc4643a99df8e88bd252537293781f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9884b4522394d24bcaee6a9fdafa23"><td class="memItemLeft" align="right" valign="top"><a id="a7c9884b4522394d24bcaee6a9fdafa23"></a>
-typedef std::array&lt; <a class="el" href="../../db/d6b/struct_primitives_1_1_color_r_g_b_a.html">ColorRGBAF</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colors_array</b></td></tr>
-<tr class="separator:a7c9884b4522394d24bcaee6a9fdafa23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Private Types inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
-<tr class="memitem:a6ae9dacdf47c20300f8208680b17b3b4 inherit pub_types_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a6ae9dacdf47c20300f8208680b17b3b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>prim_type</b> { <b>RECTANAGLE</b>, 
-<b>TRIANGLE</b>, 
-<b>SQUARE</b>
- }</td></tr>
-<tr class="separator:a6ae9dacdf47c20300f8208680b17b3b4 inherit pub_types_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a4b2763cae1acd6f11ec342116efd151b"><td class="memItemLeft" align="right" valign="top"><a id="a4b2763cae1acd6f11ec342116efd151b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculateMatrixes</b> ()</td></tr>
-<tr class="separator:a4b2763cae1acd6f11ec342116efd151b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c0644e825c9419e4f474f9cb20c3af"><td class="memItemLeft" align="right" valign="top">verticies_array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddd/class_primitives_1_1_square.html#ac3c0644e825c9419e4f474f9cb20c3af">rotateVertices</a> ()</td></tr>
-<tr class="memdesc:ac3c0644e825c9419e4f474f9cb20c3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the vertices of the square.  <a href="../../de/ddd/class_primitives_1_1_square.html#ac3c0644e825c9419e4f474f9cb20c3af">More...</a><br /></td></tr>
-<tr class="separator:ac3c0644e825c9419e4f474f9cb20c3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad75790a494a8868ca35a2aa5db463003"><td class="memItemLeft" align="right" valign="top"><a id="ad75790a494a8868ca35a2aa5db463003"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculateVerticesArr</b> ()</td></tr>
-<tr class="separator:ad75790a494a8868ca35a2aa5db463003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
+<tr class="separator:a0fad3a27d727ac9ca062714d6630575b inherit pub_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
 <tr class="memitem:a1d2bdccd23cd35795e39bca29c146819 inherit pub_methods_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a1d2bdccd23cd35795e39bca29c146819"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Primitive</b> (prim_type)</td></tr>
 <tr class="separator:a1d2bdccd23cd35795e39bca29c146819 inherit pub_methods_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d680120e46502969bac626408287cb inherit pub_methods_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="ac1d680120e46502969bac626408287cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Primitive</b> (prim_type type, bool isDefaultPrimitive)</td></tr>
+<tr class="separator:ac1d680120e46502969bac626408287cb inherit pub_methods_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68ff94694e9518ff778c1f28f0a3c47 inherit pub_methods_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="ae68ff94694e9518ff778c1f28f0a3c47"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Primitive</b> (const <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a> &amp;p)</td></tr>
 <tr class="separator:ae68ff94694e9518ff778c1f28f0a3c47 inherit pub_methods_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,7 +183,10 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>sin</b> (float r)</t
 <tr class="memitem:aebd2b83af2b18eeef0f10453d250e116 inherit pub_methods_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="aebd2b83af2b18eeef0f10453d250e116"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>cos</b> (float r)</td></tr>
 <tr class="separator:aebd2b83af2b18eeef0f10453d250e116 inherit pub_methods_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_vertex_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_vertex_handler')"><img src="../../closed.png" alt="-"/>&#160;Private Member Functions inherited from <a class="el" href="../../d8/dd2/class_vertex_handler.html">VertexHandler</a></td></tr>
+<tr class="inherit_header pub_methods_class_vertex_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_vertex_handler')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d8/dd2/class_vertex_handler.html">VertexHandler</a></td></tr>
+<tr class="memitem:aef1ab41421e48cd497c63eca6c1ba161 inherit pub_methods_class_vertex_handler"><td class="memItemLeft" align="right" valign="top"><a id="aef1ab41421e48cd497c63eca6c1ba161"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>VertexHandler</b> (bool isDefaultPrimitive)</td></tr>
+<tr class="separator:aef1ab41421e48cd497c63eca6c1ba161 inherit pub_methods_class_vertex_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff06c963333a3a6f4b203706af56c626 inherit pub_methods_class_vertex_handler"><td class="memItemLeft" align="right" valign="top"><a id="aff06c963333a3a6f4b203706af56c626"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>VertexHandler</b> (const <a class="el" href="../../d8/dd2/class_vertex_handler.html">VertexHandler</a> &amp;other)</td></tr>
 <tr class="separator:aff06c963333a3a6f4b203706af56c626 inherit pub_methods_class_vertex_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,440 +214,69 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getVAO</b> ()</td></tr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a3a2277e05b312b4e7d1dac9d823e0f24"><td class="memItemLeft" align="right" valign="top"><a id="a3a2277e05b312b4e7d1dac9d823e0f24"></a>
-<a class="el" href="../../df/d2c/class_global_1_1_window_properties.html">Global::WindowProperties</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>window</b></td></tr>
-<tr class="separator:a3a2277e05b312b4e7d1dac9d823e0f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e677d70e242e71d9a5bf68d7da13117"><td class="memItemLeft" align="right" valign="top"><a id="a6e677d70e242e71d9a5bf68d7da13117"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
-<tr class="separator:a6e677d70e242e71d9a5bf68d7da13117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac855956f8f7c13ba4d2edea15e1bc5b1"><td class="memItemLeft" align="right" valign="top"><a id="ac855956f8f7c13ba4d2edea15e1bc5b1"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
-<tr class="separator:ac855956f8f7c13ba4d2edea15e1bc5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4204b6201cd093d66b54178abb7ec2a4"><td class="memItemLeft" align="right" valign="top"><a id="a4204b6201cd093d66b54178abb7ec2a4"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>size</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> = 0</td></tr>
 <tr class="separator:a4204b6201cd093d66b54178abb7ec2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65eee5c5c3a81c826806f3d11812c338"><td class="memItemLeft" align="right" valign="top"><a id="a65eee5c5c3a81c826806f3d11812c338"></a>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_class_primitives_1_1_rectanagle"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_primitives_1_1_rectanagle')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Primitives::Rectanagle</a></td></tr>
+<tr class="memitem:ad97a8089920ce5caf52bad6f1baffa2d inherit pro_types_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="ad97a8089920ce5caf52bad6f1baffa2d"></a>
+typedef std::array&lt; <a class="el" href="../../dc/d51/struct_primitives_1_1_point2_d.html">PointF</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>verticies_array</b></td></tr>
+<tr class="separator:ad97a8089920ce5caf52bad6f1baffa2d inherit pro_types_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e8ef6f2d7c120492a717bcfc98796bf inherit pro_types_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a7e8ef6f2d7c120492a717bcfc98796bf"></a>
+typedef std::array&lt; <a class="el" href="../../db/d6b/struct_primitives_1_1_color_r_g_b_a.html">ColorRGBAF</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colors_array</b></td></tr>
+<tr class="separator:a7e8ef6f2d7c120492a717bcfc98796bf inherit pro_types_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
+<tr class="memitem:a6ae9dacdf47c20300f8208680b17b3b4 inherit pro_types_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="a6ae9dacdf47c20300f8208680b17b3b4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>prim_type</b> { <b>RECTANAGLE</b>, 
+<b>TRIANGLE</b>, 
+<b>SQUARE</b>, 
+<b>LINE</b>
+ }</td></tr>
+<tr class="separator:a6ae9dacdf47c20300f8208680b17b3b4 inherit pro_types_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_primitives_1_1_rectanagle"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_primitives_1_1_rectanagle')"><img src="../../closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Primitives::Rectanagle</a></td></tr>
+<tr class="memitem:a2dfa1ba311f43d6b09fd6aa33dc77403 inherit pro_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a2dfa1ba311f43d6b09fd6aa33dc77403"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calculateMatrixes</b> ()</td></tr>
+<tr class="separator:a2dfa1ba311f43d6b09fd6aa33dc77403 inherit pro_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c61b755b44f7c8f25b9e783c22bdea inherit pro_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top">verticies_array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a23c61b755b44f7c8f25b9e783c22bdea">rotateVertices</a> ()</td></tr>
+<tr class="memdesc:a23c61b755b44f7c8f25b9e783c22bdea inherit pro_methods_class_primitives_1_1_rectanagle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate the vertices of the square.  <a href="../../d9/d0b/class_primitives_1_1_rectanagle.html#a23c61b755b44f7c8f25b9e783c22bdea">More...</a><br /></td></tr>
+<tr class="separator:a23c61b755b44f7c8f25b9e783c22bdea inherit pro_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bab9b8a247a313e5f7c9488362d0509 inherit pro_methods_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a4bab9b8a247a313e5f7c9488362d0509"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calculateVerticesArr</b> ()</td></tr>
+<tr class="separator:a4bab9b8a247a313e5f7c9488362d0509 inherit pro_methods_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_primitives_1_1_rectanagle"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_primitives_1_1_rectanagle')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Primitives::Rectanagle</a></td></tr>
+<tr class="memitem:a20c22ed5bae27b8b53f5814948bf3674 inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a20c22ed5bae27b8b53f5814948bf3674"></a>
+<a class="el" href="../../df/d2c/class_global_1_1_window_properties.html">Global::WindowProperties</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>window</b></td></tr>
+<tr class="separator:a20c22ed5bae27b8b53f5814948bf3674 inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585b5a7b7c5dfffd925750a336d2d3a1 inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a585b5a7b7c5dfffd925750a336d2d3a1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
+<tr class="separator:a585b5a7b7c5dfffd925750a336d2d3a1 inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844af763d2c38a5d4f9c5bf1dda1bcee inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a844af763d2c38a5d4f9c5bf1dda1bcee"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
+<tr class="separator:a844af763d2c38a5d4f9c5bf1dda1bcee inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5489400dd214e3eefd477b2fc6b157e inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="ac5489400dd214e3eefd477b2fc6b157e"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="separator:ac5489400dd214e3eefd477b2fc6b157e inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c8085e9d4011fa85938b2fe596a2df inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a65c8085e9d4011fa85938b2fe596a2df"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+<tr class="separator:a65c8085e9d4011fa85938b2fe596a2df inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda444536b47e753e2d9ebf9c780f44f inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="afda444536b47e753e2d9ebf9c780f44f"></a>
 verticies_array&#160;</td><td class="memItemRight" valign="bottom"><b>verticies_arr</b> = {}</td></tr>
-<tr class="separator:a65eee5c5c3a81c826806f3d11812c338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c39873f86fc5c7b20c40c065205bc3"><td class="memItemLeft" align="right" valign="top"><a id="a53c39873f86fc5c7b20c40c065205bc3"></a>
+<tr class="separator:afda444536b47e753e2d9ebf9c780f44f inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a336263bda4ec8fde3148770c4552ee6b inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a336263bda4ec8fde3148770c4552ee6b"></a>
 colors_array&#160;</td><td class="memItemRight" valign="bottom"><b>color_arr</b> = {}</td></tr>
-<tr class="separator:a53c39873f86fc5c7b20c40c065205bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b1a13abd57f769754e1020f4ca24e2"><td class="memItemLeft" align="right" valign="top"><a id="a70b1a13abd57f769754e1020f4ca24e2"></a>
+<tr class="separator:a336263bda4ec8fde3148770c4552ee6b inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33879c8bef8a16c6045750201077955b inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="a33879c8bef8a16c6045750201077955b"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>angle</b> = 0.0f</td></tr>
-<tr class="separator:a70b1a13abd57f769754e1020f4ca24e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a0341207874b4c35b11e40f33961371"><td class="memItemLeft" align="right" valign="top"><a id="a0a0341207874b4c35b11e40f33961371"></a>
+<tr class="separator:a33879c8bef8a16c6045750201077955b inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e5ba02469211c37d0a66d50d5c6e02 inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memItemLeft" align="right" valign="top"><a id="aa6e5ba02469211c37d0a66d50d5c6e02"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>inc</b> [6] = {0, 1, 2, 0, 2, 3}</td></tr>
-<tr class="separator:a0a0341207874b4c35b11e40f33961371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Private Attributes inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
-<tr class="memitem:ad073752488653318172009779f108351 inherit pub_attribs_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="ad073752488653318172009779f108351"></a>
+<tr class="separator:aa6e5ba02469211c37d0a66d50d5c6e02 inherit pro_attribs_class_primitives_1_1_rectanagle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_primitive"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_primitive')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a></td></tr>
+<tr class="memitem:ad073752488653318172009779f108351 inherit pro_attribs_class_primitive"><td class="memItemLeft" align="right" valign="top"><a id="ad073752488653318172009779f108351"></a>
 enum Primitive::prim_type&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE</b></td></tr>
-<tr class="separator:ad073752488653318172009779f108351 inherit pub_attribs_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad073752488653318172009779f108351 inherit pro_attribs_class_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd73439e21baa6d3f5a71886ed6ef001"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd73439e21baa6d3f5a71886ed6ef001">&#9670;&nbsp;</a></span>isNear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Primitives::Square::isNear </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>radius</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>is the Object int the radius </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">float</td><td>x - x coordinate of the center of the circle </td></tr>
-    <tr><td class="paramname">float</td><td>y - y coordinate of the center of the circle </td></tr>
-    <tr><td class="paramname">float</td><td>radius - radius of the circle</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true - if object is in the radius </dd>
-<dd>
-false - if object is not in the radius </dd></dl>
-
-<p>Implements <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a>.</p>
-
-</div>
-</div>
-<a id="acd6f37dd5858031e0f1f752619e78a82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6f37dd5858031e0f1f752619e78a82">&#9670;&nbsp;</a></span>isVisible()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Primitives::Square::isVisible </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>is Object on the screen </p>
-<dl class="section return"><dt>Returns</dt><dd>true - if object is on the screen </dd>
-<dd>
-false - if object is not on the screen </dd></dl>
-
-<p>Implements <a class="el" href="../../d1/df5/class_primitive.html">Primitive</a>.</p>
-
-</div>
-</div>
-<a id="a93e5e9d6dfab457515ea2efa3ea5d6f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93e5e9d6dfab457515ea2efa3ea5d6f4">&#9670;&nbsp;</a></span>Move()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::Move </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>move the square relative to the current position </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">float</td><td>x - offset in x direction </td></tr>
-    <tr><td class="paramname">float</td><td>y - offset in y direction </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a65daa33f3cc4db406cc35d55bd01ffa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65daa33f3cc4db406cc35d55bd01ffa1">&#9670;&nbsp;</a></span>rotate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::rotate </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>rotate the square relative to the current rotation </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">float</td><td>angle - angle in radians </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac3c0644e825c9419e4f474f9cb20c3af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3c0644e825c9419e4f474f9cb20c3af">&#9670;&nbsp;</a></span>rotateVertices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Square::verticies_array Primitives::Square::rotateVertices </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Rotate the vertices of the square. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vertices</td><td>- vertices of the square </td></tr>
-    <tr><td class="paramname">rot</td><td>- rotation matrix </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a48e7991e2a5db9c16f49768a75c6ad5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48e7991e2a5db9c16f49768a75c6ad5d">&#9670;&nbsp;</a></span>setAlpha()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::setAlpha </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>alpha</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the Alpha value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">float</td><td>alpha - alpha value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2772ca56d742bdbf12dfb5aa50837425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2772ca56d742bdbf12dfb5aa50837425">&#9670;&nbsp;</a></span>setColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::setColor </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>alpha</em> = <code>1.0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the <a class="el" href="../../d1/d5f/struct_primitives_1_1_color.html">Color</a> value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">float</td><td>r - red value </td></tr>
-    <tr><td class="paramname">float</td><td>g - green value </td></tr>
-    <tr><td class="paramname">float</td><td>b - blue value </td></tr>
-    <tr><td class="paramname">float</td><td>alpha - alpha value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af03afda4acb1458e591b8ffe8731888a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af03afda4acb1458e591b8ffe8731888a">&#9670;&nbsp;</a></span>setG()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::setG </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set G color value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>- green value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a610d88954d4dccd6a28413650e1518b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a610d88954d4dccd6a28413650e1518b4">&#9670;&nbsp;</a></span>setPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::setPosition </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the Position object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">float</td><td>x - x coordinate of the center of the square </td></tr>
-    <tr><td class="paramname">float</td><td>y - y coordinate of the center of the square </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a42e53f420e15b998d9faacff846e4e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42e53f420e15b998d9faacff846e4e4e">&#9670;&nbsp;</a></span>setR()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::setR </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>r</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set R color value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>- red value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a43ce7fbdedde834e38a56380fb826602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43ce7fbdedde834e38a56380fb826602">&#9670;&nbsp;</a></span>setRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::setRotation </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>angle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the rotation of the square. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">float</td><td>angle - angle in radians of the square </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa5987c3269ff1d0df07ccffcc6f1cbdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5987c3269ff1d0df07ccffcc6f1cbdf">&#9670;&nbsp;</a></span>setTexture()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Primitives::Square::setTexture </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the Texture object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">std::string</td><td>data - path to the texture </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Engine/Core/core/primitives/<a class="el" href="../../d3/da9/_square_8hpp_source.html">Square.hpp</a></li>
 <li>Engine/Core/core/primitives/Square.cpp</li>
