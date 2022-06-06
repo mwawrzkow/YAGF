@@ -36,6 +36,5 @@ var searchData=
   ['controller_2ehpp_58',['Controller.hpp',['../d6/d14/_controller_8hpp.html',1,'']]],
   ['cos_59',['cos',['../d1/df5/class_primitive.html#aebd2b83af2b18eeef0f10453d250e116',1,'Primitive']]],
   ['createandcompileshaders_60',['CreateAndCompileShaders',['../d4/d98/namespace_open_g_l_instance.html#a5b2c7d57cde9821f3cbcc0865acd15fb',1,'OpenGLInstance']]],
-  ['createprogramandlinkshaders_61',['CreateProgramAndLinkShaders',['../d4/d98/namespace_open_g_l_instance.html#adb504e99c3f4e081b3d9a714021fe7f0',1,'OpenGLInstance']]],
-  ['core_20of_20framework_62',['Core of framework',['../d6/df6/md__engine__core__r_e_a_d_m_e.html',1,'']]]
+  ['createprogramandlinkshaders_61',['CreateProgramAndLinkShaders',['../d4/d98/namespace_open_g_l_instance.html#adb504e99c3f4e081b3d9a714021fe7f0',1,'OpenGLInstance']]]
 ];
