@@ -2,11 +2,12 @@
 #define PRIMITIVE_HPP
 #include "vertexHandler.hpp"
 #include <math.h>
+#include "Renderable.hpp"
 #ifndef M_PI
 // Strange but needed fix for M_PI not defined in math.h on Windows machines
 #define M_PI 3.14159265358979323846
 #endif
-class Primitive : public VertexHandler
+class Primitive : public VertexHandler, public Renderable
 {
 protected:
     enum prim_type
@@ -25,7 +26,6 @@ public:
     virtual ~Primitive();
     float sin(float r);
     float cos(float r);
-    virtual void Display() = 0;
     virtual bool isVisible() = 0;
     virtual bool isNear(float, float, float) = 0;
 };

@@ -85,20 +85,26 @@ int main(int argc, char **argv)
     WindowProperties->setWindowHeight(height);
     WindowProperties->setWindowWidth(width);
     WindowProperties->getTextures()->alocateTextureSpace(1);
-    std::vector<Primitive*> primVect;
+    std::vector<Renderable *> primVect;
     // for(int i = 0; i < 50; i++){
     //     for(int j = 0; j < 30; j++)
-    //     { 
+    //     {
     //         Primitives::Rectanagle* sq = new Primitives::Rectanagle(i* 100+45,j * 100, 75, 50);
     //         sq->setRotation(j*i/M_PI);
     //         primVect.push_back(sq);
     //         ((Primitives::Rectanagle*)primVect[primVect.size() - 1])->setTexture("Square.png");
     //     }
     // }
-    //create line 
-    Primitives::Line line(0,0, 0,500, 1.0f,1.0f,1.0f,1.0f);
+    // create line
+    // Primitives::Line line({0, 0}, {0, 500}, 100, 1.0f, 1.0f, 1.0f, 1.0f);
+    // line.setTexture("Square.png");
+    // primVect.push_back(&line);
+    // Primitives::Line line2({0, 500}, {1500, 1500}, 100, 1.0f, 1.0f, 1.0f, 1.0f);
+    // line.setTexture("Square.png");
+    Primitives::BezierLine line({0, 0}, {500,200}, {1280, 720}, 100, 1.0f, 1.0f, 1.0f, 1.0f);
     line.setTexture("Square.png");
     primVect.push_back(&line);
+    // primVect.push_back(&line2);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     // glBindVertexArray(0);
     glfwSetKeyCallback(window, onKeyCallback);
@@ -116,7 +122,7 @@ int main(int argc, char **argv)
         glfwPollEvents();
         WindowProperties->setWindowHeight(height);
         WindowProperties->setWindowWidth(width);
-        for(int i = 0; i <primVect.size(); i++)
+        for (int i = 0; i < primVect.size(); i++)
         {
             primVect[i]->Display();
         }
