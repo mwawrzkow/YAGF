@@ -2,7 +2,7 @@
 !include Rectanagle.puml
 
 set namespaceSeparator ::
-Primitives::Rectanagle <-- Primitives::Square 
+Primitives::Rectanagle <|-- Primitives::Square 
 
 class Primitives::Square{ 
     -float size = 0; 
@@ -12,7 +12,7 @@ class Primitives::Square{
     +{abstract}~Square();
 }
 Primitives::Line "1..n" *-- Primitives::Rectanagle
-Primitive <- Primitives::Line 
+Primitive <|- Primitives::Line 
 class Primitives::Line{ 
     -std::vector<Rectanagle> rectangles;
     +Line(int x0, int y0, int x1, int y1,int r,int g, int b, float alpha = 1.0f);

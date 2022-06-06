@@ -21,7 +21,7 @@ Primitives::Rectanagle "<<typedef>>" o- Primitives::colors_array
 Primitives::vertices_array "<<typedef>>"<-- PointF
 PointF "<<typedef>>" <-- Point2D
 Primitives::Rectanagle "<<typedef>>" o-- Primitives::vertices_array
-Primitive <- Primitives::Rectanagle
+Primitive <|- Primitives::Rectanagle
 Primitives::Rectanagle <-- ColorType
 class Primitives::Rectanagle{
     #Global::WindowProperties* window; 
