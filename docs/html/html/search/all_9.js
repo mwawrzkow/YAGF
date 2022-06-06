@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['rectanagle_25',['Rectanagle',['../d9/d0b/class_primitives_1_1_rectanagle.html',1,'Primitives']]],
-  ['releasebuffer_26',['releaseBuffer',['../df/da8/class_g_p_u_1_1_array_handler.html#ae59e3f581dbc8ede268e2a510244415a',1,'GPU::ArrayHandler']]],
-  ['rotate_27',['rotate',['../d9/d0b/class_primitives_1_1_rectanagle.html#aca03cdc11a8d3518e73ec869bfd5c3c1',1,'Primitives::Rectanagle']]],
-  ['rotatevertices_28',['rotateVertices',['../d9/d0b/class_primitives_1_1_rectanagle.html#a23c61b755b44f7c8f25b9e783c22bdea',1,'Primitives::Rectanagle']]]
+  ['j_131',['J',['../df/d9f/namespace_i_n_p_u_t.html#a2885ccc8eb0e91d3fda47719ae9485e6a57d6e07941c5a2bd8b27b9e8c73b4af1',1,'INPUT']]]
 ];

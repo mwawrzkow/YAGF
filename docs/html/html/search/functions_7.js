@@ -1,12 +1,5 @@
 var searchData=
 [
-  ['setalpha_85',['setAlpha',['../d9/d0b/class_primitives_1_1_rectanagle.html#aa7b4570e7b054d05d902327075dcf4b8',1,'Primitives::Rectanagle']]],
-  ['setcolor_86',['setColor',['../d9/d0b/class_primitives_1_1_rectanagle.html#a9d68300bfbbc4d77050cf7e651f98331',1,'Primitives::Rectanagle']]],
-  ['setg_87',['setG',['../d9/d0b/class_primitives_1_1_rectanagle.html#a569f2526f0a5b0c67b45de1f0e2d8bd5',1,'Primitives::Rectanagle']]],
-  ['setheight_88',['setHeight',['../d9/d0b/class_primitives_1_1_rectanagle.html#aadd7538e83b69eb8095a6be10f7bb73c',1,'Primitives::Rectanagle']]],
-  ['setposition_89',['setPosition',['../d9/d0b/class_primitives_1_1_rectanagle.html#a815a4f31179e226810b233c1e07e06d6',1,'Primitives::Rectanagle']]],
-  ['setr_90',['setR',['../d9/d0b/class_primitives_1_1_rectanagle.html#a9b499f6bff629d65b5f9505552edc727',1,'Primitives::Rectanagle']]],
-  ['setrotation_91',['setRotation',['../d9/d0b/class_primitives_1_1_rectanagle.html#ab11cdd207c9edf9aafe05e67ef5eb9a3',1,'Primitives::Rectanagle']]],
-  ['settexture_92',['setTexture',['../d9/d0b/class_primitives_1_1_rectanagle.html#aea19f931e4b59973a88f1645f8cdc4a0',1,'Primitives::Rectanagle']]],
-  ['setwidth_93',['setWidth',['../d9/d0b/class_primitives_1_1_rectanagle.html#a5dde8f0f1f5f465aa241f493c4887aee',1,'Primitives::Rectanagle']]]
+  ['notify_454',['Notify',['../da/db2/class_i_n_p_u_t_1_1_adapter.html#a0bcba87e609e95e9a6713af0478167d0',1,'INPUT::Adapter::Notify()'],['../dd/d23/class_o_s_d_l_1_1_observer.html#a55167a3f4db1518ca116d0651b27e181',1,'OSDL::Observer::Notify()'],['../db/d74/class_o_s_d_l_1_1_subject.html#ac425e035192f315f23ce6f8aea5e4ec9',1,'OSDL::Subject::Notify()']]],
+  ['notifyobserver_455',['NotifyObserver',['../db/d74/class_o_s_d_l_1_1_subject.html#a6a714ce4c4bcc3e7c5243e34478e4a71',1,'OSDL::Subject']]]
 ];

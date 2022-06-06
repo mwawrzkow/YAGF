@@ -69,33 +69,39 @@ $(function() {
 <div class="title">Square.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SQUARE_HPP</span></div>
+<a href="../../d3/da9/_square_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SQUARE_HPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SQUARE_HPP</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../base/Primitive.hpp&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../WindowProperties.hpp&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../base/Point.hpp&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Rectanagle.hpp&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/ddf/_rectanagle_8hpp.html">Rectanagle.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Primitives</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="../../db/db7/namespace_primitives.html">Primitives</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="../../de/ddd/class_primitives_1_1_square.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> : <span class="keyword">public</span> <a class="code" href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Rectanagle</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">float</span> size = 0; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../de/ddd/class_primitives_1_1_square.html#a4204b6201cd093d66b54178abb7ec2a4">   14</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../de/ddd/class_primitives_1_1_square.html#a4204b6201cd093d66b54178abb7ec2a4">size</a> = 0; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span> = 1.0f);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a>(<span class="keyword">const</span> <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;s);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;s);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="../../de/ddd/class_primitives_1_1_square.html#add1c9a260286195df05e9acb271b06ca">Square</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span> = 1.0f);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="../../de/ddd/class_primitives_1_1_square.html#add1c9a260286195df05e9acb271b06ca">Square</a>(<span class="keyword">const</span> <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;s);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;<a class="code" href="../../de/ddd/class_primitives_1_1_square.html#a6cd731ab147258b82194802c26734349">operator=</a>(<span class="keyword">const</span> <a class="code" href="../../de/ddd/class_primitives_1_1_square.html">Square</a> &amp;s);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="../../de/ddd/class_primitives_1_1_square.html#a5411f9750577cf766e68027c3d1a144d">~Square</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_rectanagle_8hpp_html"><div class="ttname"><a href="../../db/ddf/_rectanagle_8hpp.html">Rectanagle.hpp</a></div></div>
 <div class="ttc" id="aclass_primitives_1_1_rectanagle_html"><div class="ttname"><a href="../../d9/d0b/class_primitives_1_1_rectanagle.html">Primitives::Rectanagle</a></div><div class="ttdef"><b>Definition:</b> Rectanagle.hpp:10</div></div>
+<div class="ttc" id="aclass_primitives_1_1_square_html_a6cd731ab147258b82194802c26734349"><div class="ttname"><a href="../../de/ddd/class_primitives_1_1_square.html#a6cd731ab147258b82194802c26734349">Primitives::Square::operator=</a></div><div class="ttdeci">Square &amp; operator=(const Square &amp;s)</div><div class="ttdef"><b>Definition:</b> Square.cpp:23</div></div>
+<div class="ttc" id="aclass_primitives_1_1_square_html_a4204b6201cd093d66b54178abb7ec2a4"><div class="ttname"><a href="../../de/ddd/class_primitives_1_1_square.html#a4204b6201cd093d66b54178abb7ec2a4">Primitives::Square::size</a></div><div class="ttdeci">float size</div><div class="ttdef"><b>Definition:</b> Square.hpp:14</div></div>
+<div class="ttc" id="aclass_primitives_1_1_square_html_add1c9a260286195df05e9acb271b06ca"><div class="ttname"><a href="../../de/ddd/class_primitives_1_1_square.html#add1c9a260286195df05e9acb271b06ca">Primitives::Square::Square</a></div><div class="ttdeci">Square(float, float, float, float=1.0f)</div><div class="ttdef"><b>Definition:</b> Square.cpp:7</div></div>
+<div class="ttc" id="aclass_primitives_1_1_square_html_a5411f9750577cf766e68027c3d1a144d"><div class="ttname"><a href="../../de/ddd/class_primitives_1_1_square.html#a5411f9750577cf766e68027c3d1a144d">Primitives::Square::~Square</a></div><div class="ttdeci">virtual ~Square()</div><div class="ttdef"><b>Definition:</b> Square.cpp:33</div></div>
 <div class="ttc" id="aclass_primitives_1_1_square_html"><div class="ttname"><a href="../../de/ddd/class_primitives_1_1_square.html">Primitives::Square</a></div><div class="ttdef"><b>Definition:</b> Square.hpp:11</div></div>
+<div class="ttc" id="anamespace_primitives_html"><div class="ttname"><a href="../../db/db7/namespace_primitives.html">Primitives</a></div><div class="ttdef"><b>Definition:</b> Point.hpp:5</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
