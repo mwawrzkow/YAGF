@@ -6,35 +6,39 @@
       <Path>index.html</Path>
       <Subnodes>
        <Node>
+        <Name>Core of framework</Name>
+        <Path>d6/df6/md__engine__core__r_e_a_d_m_e.html</Path>
+       </Node>
+       <Node>
         <Name>WIP: FastOGLib - Fast OpenGL Library</Name>
         <Path>d3/dcc/md__r_e_a_d_m_e.html</Path>
         <Subnodes>
          <Node>
           <Name>Instalation of Library</Name>
           <Path>d3/dcc/md__r_e_a_d_m_e.html</Path>
-          <Anchor>autotoc_md1</Anchor>
+          <Anchor>autotoc_md2</Anchor>
           <Subnodes>
            <Node>
             <Name>Linux/OSX</Name>
             <Path>d3/dcc/md__r_e_a_d_m_e.html</Path>
-            <Anchor>autotoc_md2</Anchor>
+            <Anchor>autotoc_md3</Anchor>
            </Node>
            <Node>
             <Name>Windows</Name>
             <Path>d3/dcc/md__r_e_a_d_m_e.html</Path>
-            <Anchor>autotoc_md3</Anchor>
+            <Anchor>autotoc_md4</Anchor>
            </Node>
            <Node>
             <Name>Developing the application</Name>
             <Path>d3/dcc/md__r_e_a_d_m_e.html</Path>
-            <Anchor>autotoc_md4</Anchor>
+            <Anchor>autotoc_md5</Anchor>
            </Node>
           </Subnodes>
          </Node>
          <Node>
           <Name>Contributors</Name>
           <Path>d3/dcc/md__r_e_a_d_m_e.html</Path>
-          <Anchor>autotoc_md5</Anchor>
+          <Anchor>autotoc_md6</Anchor>
          </Node>
         </Subnodes>
        </Node>
