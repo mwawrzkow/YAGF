@@ -47,16 +47,16 @@ namespace Primitives
     BezierLine::BezierLine(PointI p0, PointI pc, PointI p1, int w, float r, float g, float b, float alpha)
         : type(QUADRATIC)
     {
-        for (float t = 0; t < 1; t += 0.2f)
+        std::vector<PointI> points;
+        for (float t = 0; t < 1; t += 0.1f)
         {
-            float powt = t*t; 
-            float comp = 1 - t;
-            float mformula = comp * comp;
-            float x = mformula * p0.x + 2 * comp * t * pc.x + powt * p1.x;
-            float y = mformula * p0.y + 2 * comp * t * pc.y + powt * p1.y;
-            PointI p = {static_cast<int>(x), static_cast<int>(y)};
-            Line l(p0, p, w);
-            this->rectanagles.push_back(l);
+            float x = pow(1 - t, 2) * p0.x + 2 * t * (1 - t) * pc.x + pow(t, 2) * p1.x;
+            float y = pow(1 - t, 2) * p0.y + 2 * t * (1 - t) * pc.y + pow(t, 2) * p1.y;
+            points.push_back({static_cast<int>(x), static_cast<int>(y)});
+        }
+        for (int i = 0; i < points.size() - 1; i++)
+        {
+            this->rectanagles.push_back(Line(points[i], points[i + 1]));
         }
     }
     void BezierLine::Display()
