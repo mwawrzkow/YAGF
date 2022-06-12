@@ -1,5 +1,5 @@
 #include "Line.hpp"
-
+#include <cassert>
 namespace Primitives
 {
     Line::BezierLine::BezierLine(PointI p0, PointI p1, PointI p2, PointI p3, BezierType bezierType)
