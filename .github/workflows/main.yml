@@ -139,7 +139,7 @@ jobs:
         git submodule sync && git submodule update --init
         mkdir build && cd build && cmake .. && make 
     - run: | 
-        rm -rf Engine/Core/glew Engine/Core/glfw Engine/Core/core/base/stb
+        rm -rf build/_deps/*
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
     
