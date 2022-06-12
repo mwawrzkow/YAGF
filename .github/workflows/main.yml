@@ -143,59 +143,59 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
     
-  update-docs-on-branch: 
-      runs-on: ubuntu-latest
-      needs: build
-      if: github.event_name != 'push' 
-      steps: 
-        - uses: actions/checkout@v2 
-        - name: installing gh 
-          run: sudo apt install gh
-        - name: Checkout PR
-          env:
-            GITHUB_TOKEN: ${{ secrets.TOKEN }} 
-          run: gh pr checkout ${{ github.event.pull_request.number }}
-        - name: ensure that directories exists and are empty
-          run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/* && ls -la
-        - name: install dependencies
-          run: sudo apt-get install doxygen-latex 
-        - name: Download HTML docs
-          uses: aochmann/actions-download-artifact@1.0.4
-          with:
-            name: doc_html
-            latest: true
-            path: docs/html/
-        - name: Download Latex docs
-          uses: aochmann/actions-download-artifact@1.0.4
-          with:
-            name: doc_latex
-            latest: true
-            path: docs/latex/
-        - name: Download audit docs
-          uses: aochmann/actions-download-artifact@1.0.4
-          with:
-            name: cppcheck-result
-            latest: true
-            path: docs/audit
-        - name: unzip artifacts 
-          run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz && cd ../.. && cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz && cd ../..
-        - name: build pdf
-          run: cd docs/latex/latex/ && make
-        - name: move pdf file to latex directory and remove sources
-          run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
-        - name: unzip audit 
-          run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* . && rm -rf report/
-        - name: Extract branch name
-          shell: bash
-          run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-          id: extract_branch
-        - name: Commit files
-          run: |
-            git config --local user.email "marcin.wawrzkow@outlook.com"
-            git config --local user.name "github-actions[bot]"
-            git add docs
-            git commit -m "Added docs" -a
-            git push
-          env: 
-            GITHUB_TOKEN: ${{ secrets.TOKEN }} 
+  # update-docs-on-branch: 
+  #     runs-on: ubuntu-latest
+  #     needs: build
+  #     if: github.event_name != 'push' 
+  #     steps: 
+  #       - uses: actions/checkout@v2 
+  #       - name: installing gh 
+  #         run: sudo apt install gh
+  #       - name: Checkout PR
+  #         env:
+  #           GITHUB_TOKEN: ${{ secrets.TOKEN }} 
+  #         run: gh pr checkout ${{ github.event.pull_request.number }}
+  #       - name: ensure that directories exists and are empty
+  #         run: mkdir -p docs/html docs/latex/ docs/audit && rm -rf docs/html/* docs/latex/* docs/checks/* && ls -la
+  #       - name: install dependencies
+  #         run: sudo apt-get install doxygen-latex 
+  #       - name: Download HTML docs
+  #         uses: aochmann/actions-download-artifact@1.0.4
+  #         with:
+  #           name: doc_html
+  #           latest: true
+  #           path: docs/html/
+  #       - name: Download Latex docs
+  #         uses: aochmann/actions-download-artifact@1.0.4
+  #         with:
+  #           name: doc_latex
+  #           latest: true
+  #           path: docs/latex/
+  #       - name: Download audit docs
+  #         uses: aochmann/actions-download-artifact@1.0.4
+  #         with:
+  #           name: cppcheck-result
+  #           latest: true
+  #           path: docs/audit
+  #       - name: unzip artifacts 
+  #         run: cd docs/html/ && tar -xvzf html.tar.gz && rm html.tar.gz && cd ../.. && cd docs/latex/ && tar -xvzf latex.tar.gz && rm latex.tar.gz && cd ../..
+  #       - name: build pdf
+  #         run: cd docs/latex/latex/ && make
+  #       - name: move pdf file to latex directory and remove sources
+  #         run: mv docs/latex/latex/refman.pdf docs/latex/ && rm -rf docs/latex/latex
+  #       - name: unzip audit 
+  #         run: cd docs/audit/ && ls -la && tar -xvzf result.tar.gz && rm result.tar.gz && mv report/* . && rm -rf report/
+  #       - name: Extract branch name
+  #         shell: bash
+  #         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+  #         id: extract_branch
+  #       - name: Commit files
+  #         run: |
+  #           git config --local user.email "marcin.wawrzkow@outlook.com"
+  #           git config --local user.name "github-actions[bot]"
+  #           git add docs
+  #           git commit -m "Added docs" -a
+  #           git push
+  #         env: 
+  #           GITHUB_TOKEN: ${{ secrets.TOKEN }} 
       

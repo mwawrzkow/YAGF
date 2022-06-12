@@ -1,8 +1,0 @@
-<map id="Engine/Core/patterns/ObserverSubject/DualLink.hpp" name="Engine/Core/patterns/ObserverSubject/DualLink.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="335,5,557,47"/>
-<area shape="rect" id="node2" href="$d9/d92/_input_adapter_8hpp.html" title=" " alt="" coords="5,102,252,129"/>
-<area shape="rect" id="node4" href="$d6/d14/_controller_8hpp.html" title=" " alt="" coords="276,95,435,136"/>
-<area shape="rect" id="node5" href="$db/df5/_model_8hpp.html" title=" " alt="" coords="459,95,617,136"/>
-<area shape="rect" id="node6" href="$d1/d61/_view_8hpp.html" title=" " alt="" coords="641,95,800,136"/>
-<area shape="rect" id="node3" href="$d8/dbe/_input_adapter_8cpp.html" title=" " alt="" coords="5,184,252,211"/>
-</map>
