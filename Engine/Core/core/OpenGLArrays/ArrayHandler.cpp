@@ -74,7 +74,7 @@ namespace GPU
     }
     bool ArrayHandler::areFreeBuffers()
     {
-        for (int i = 0; i < this->GPUSpace.size(); i++)
+        for (size_t i = 0; i < this->GPUSpace.size(); i++)
         {
             if (!this->GPUSpace[i].Taken())
                 return true;
@@ -83,7 +83,7 @@ namespace GPU
     }
     GPU_Ref *ArrayHandler::getFirstAvailavleBuffer()
     {
-        for (int i = 0; i < GPUSpace.size(); i++)
+        for (size_t i = 0; i < GPUSpace.size(); i++)
         {
             if (!GPUSpace[i].Taken())
                 return GPUSpace[i].Take();

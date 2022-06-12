@@ -95,16 +95,9 @@ int main(int argc, char **argv)
     //         ((Primitives::Rectanagle*)primVect[primVect.size() - 1])->setTexture("Square.png");
     //     }
     // }
-    // create line
-    // Primitives::Line line({0, 0}, {0, 500}, 100, 1.0f, 1.0f, 1.0f, 1.0f);
-    // line.setTexture("Square.png");
-    // primVect.push_back(&line);
-    // Primitives::Line line2({0, 500}, {1500, 1500}, 100, 1.0f, 1.0f, 1.0f, 1.0f);
-    // line.setTexture("Square.png");
-    Primitives::BezierLine line({0, 0}, {500,200}, {1280, 720}, 100, 1.0f, 1.0f, 1.0f, 1.0f);
+    Primitives::Line line({0,0},{900,900},500);
     line.setTexture("Square.png");
     primVect.push_back(&line);
-    // primVect.push_back(&line2);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     // glBindVertexArray(0);
     glfwSetKeyCallback(window, onKeyCallback);

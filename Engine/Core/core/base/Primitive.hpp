@@ -7,7 +7,7 @@
 // Strange but needed fix for M_PI not defined in math.h on Windows machines
 #define M_PI 3.14159265358979323846
 #endif
-class Primitive : public VertexHandler, public Renderable
+class Primitive : public VertexHandler
 {
 protected:
     enum prim_type
