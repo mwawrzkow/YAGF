@@ -25,16 +25,16 @@ jobs:
         uses: tim-actions/commit-message-checker-with-regex@v0.3.1
         with:
           commits: ${{ steps.get-pr-commits.outputs.commits }}
-          pattern: '^.{0,200}(\n.*)*$'
-          error: 'Subject too long (max 200)'
+          pattern: '^.{0,1000}(\n.*)*$'
+          error: 'Subject too long (max 1000)'
 
       - name: Check Body Line Length
         if: ${{ success() || failure() }}
         uses: tim-actions/commit-message-checker-with-regex@v0.3.1
         with:
           commits: ${{ steps.get-pr-commits.outputs.commits }}
-          pattern: '^.+(\n.{0,500})*$'
-          error: 'Body line too long (max 500)'
+          pattern: '^.+(\n.{0,1000})*$'
+          error: 'Body line too long (max 1000)'
 
       - name: Check Fixes
         if: ${{ success() || failure() }}
