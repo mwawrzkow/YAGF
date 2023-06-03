@@ -1,6 +1,6 @@
-# WIP: FastOGLib - Fast OpenGL Library
+# WIP: YAGF - Yet Another Graphics Framework
 
-Fast and scalable library, able to create OpenGL progams on osx/linux/windows machines. 
+Fast and scalable library, able to create graphics progams on osx/linux/windows machines. 
 
 # Instalation of Library
 Actually does not provide plug in solution. Saying that so it's needed to download all source codes of Lib and dependent libs. 
